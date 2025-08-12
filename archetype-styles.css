@@ -1,0 +1,723 @@
+/* Archetype Tree Specific Styles */
+
+/* Character Selector */
+.character-section {
+    background: var(--surface);
+    padding: 1.5rem 2rem;
+    border-bottom: 1px solid var(--border);
+}
+
+.character-selector {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    flex-wrap: wrap;
+}
+
+.character-dropdown-container {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.character-dropdown-container label {
+    font-weight: 600;
+    color: var(--text-primary);
+    font-size: 1rem;
+}
+
+/* Custom Select Dropdown */
+.custom-select {
+    position: relative;
+    min-width: 280px;
+}
+
+.selected-character {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    padding: 0.75rem 1rem;
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    background: var(--background);
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+.selected-character:hover {
+    border-color: var(--primary);
+    box-shadow: 0 0 0 3px var(--primary-alpha);
+}
+
+.character-avatar {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 2px solid var(--border);
+}
+
+.character-name {
+    flex: 1;
+    font-weight: 500;
+    color: var(--text-primary);
+}
+
+.selected-character .fas {
+    color: var(--text-secondary);
+    transition: transform 0.2s ease;
+}
+
+.character-options.show + .selected-character .fas,
+.character-options.show ~ .selected-character .fas {
+    transform: rotate(180deg);
+}
+
+/* Character Options Dropdown */
+.character-options {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+    max-height: 0;
+    overflow: hidden;
+    transition: all 0.3s ease;
+    margin-top: 4px;
+}
+
+.character-options.show {
+    max-height: 400px;
+    overflow-y: auto;
+}
+
+.character-option {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    padding: 0.75rem 1rem;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+    border-bottom: 1px solid var(--border-light);
+}
+
+.character-option:last-child {
+    border-bottom: none;
+}
+
+.character-option:hover {
+    background: var(--surface-alt);
+}
+
+.character-option.selected {
+    background: var(--primary-alpha);
+    color: var(--primary);
+}
+
+.character-option .character-avatar {
+    width: 36px;
+    height: 36px;
+}
+
+/* Character Info Display */
+.character-info {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    padding: 1rem;
+    background: var(--surface-alt);
+    border-radius: 12px;
+    border: 1px solid var(--border);
+}
+
+.character-portrait {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 3px solid var(--primary);
+}
+
+.character-details {
+    display: flex;
+    flex-direction: column;
+    gap: 0.25rem;
+}
+
+.character-name-display {
+    font-size: 1rem;
+    color: var(--text-secondary);
+}
+
+.character-name-display strong {
+    color: var(--text-primary);
+    font-size: 1.1rem;
+}
+
+.character-selector select {
+    padding: 0.5rem 1rem;
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    background: var(--background);
+    color: var(--text-primary);
+    font-size: 0.9rem;
+    min-width: 200px;
+    cursor: pointer;
+}
+
+.character-selector select:focus {
+    outline: none;
+    border-color: var(--primary);
+    box-shadow: 0 0 0 3px var(--primary-alpha);
+}
+
+.royal-indicator {
+    background: linear-gradient(135deg, #ffd700, #ffed4a);
+    color: #8b5a00;
+    padding: 0.25rem 0.5rem;
+    border-radius: 12px;
+    font-size: 0.75rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+/* Dark theme adjustments for character images */
+[data-theme="dark"] .character-avatar,
+[data-theme="dark"] .character-portrait {
+    border-color: var(--border);
+}
+
+[data-theme="dark"] .character-options {
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+    .character-selector {
+        flex-direction: column;
+        align-items: stretch;
+        gap: 1rem;
+    }
+    
+    .character-dropdown-container {
+        width: 100%;
+    }
+    
+    .custom-select {
+        min-width: unset;
+        width: 100%;
+    }
+    
+    .character-info {
+        justify-content: center;
+        text-align: center;
+    }
+}
+
+/* Archetype Node States */
+.archetype-node.character-locked {
+    background: #374151;
+    border: 2px solid #6b7280;
+    color: #9ca3af;
+    cursor: not-allowed;
+    opacity: 0.6;
+}
+
+.royal-exclusive {
+    color: #fbbf24;
+    font-weight: 600;
+}
+
+.character-locked {
+    color: #9ca3af;
+    font-style: italic;
+}
+
+/* Overview Section */
+.archetype-overview {
+    background: var(--surface);
+    border-bottom: 1px solid var(--border);
+    padding: 2rem;
+}
+
+/* Legend */
+.legend-section {
+    background: var(--surface-alt);
+    padding: 1rem 2rem;
+    border-bottom: 1px solid var(--border);
+}
+
+.legend {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.legend h3 {
+    margin-bottom: 1rem;
+    color: var(--text-primary);
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+.legend-items {
+    display: flex;
+    gap: 2rem;
+    flex-wrap: wrap;
+}
+
+.legend-item {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    font-size: 0.875rem;
+    color: var(--text-secondary);
+}
+
+.connection-line {
+    width: 30px;
+    height: 2px;
+    background: var(--border);
+    position: relative;
+}
+
+.connection-line::after {
+    content: '';
+    position: absolute;
+    right: -3px;
+    top: -3px;
+    width: 0;
+    height: 0;
+    border-left: 8px solid var(--border);
+    border-top: 4px solid transparent;
+    border-bottom: 4px solid transparent;
+}
+
+/* Archetype Container */
+.archetype-container {
+    padding: 2rem;
+    overflow-x: auto;
+    min-height: 70vh;
+}
+
+.archetype-tree {
+    max-width: 1400px;
+    margin: 0 auto;
+    position: relative;
+    min-height: 800px;
+}
+
+/* Lineage-based Layout */
+.lineage-container {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    padding: 20px;
+    width: 100%;
+}
+
+.lineage-group {
+    background: var(--surface);
+    border-radius: 12px;
+    padding: 20px;
+    border: 1px solid var(--border);
+    box-shadow: var(--shadow);
+}
+
+.lineage-title {
+    color: var(--primary-color);
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin: 0 0 20px 0;
+    text-align: center;
+    border-bottom: 2px solid var(--primary-color);
+    padding-bottom: 10px;
+}
+
+.archetype-lineage-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 20px;
+    margin-top: 15px;
+}
+
+@media (max-width: 768px) {
+    .archetype-lineage-grid {
+        grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+        gap: 15px;
+    }
+}
+
+@media (max-width: 480px) {
+    .archetype-lineage-grid {
+        grid-template-columns: 1fr;
+        gap: 12px;
+    }
+}
+
+.archetype-icon {
+    font-size: 2rem;
+    margin-bottom: 8px;
+    color: var(--primary-color);
+}
+
+.archetype-name {
+    font-weight: 600;
+    font-size: 1rem;
+    margin-bottom: 5px;
+    color: var(--text-primary);
+}
+
+.archetype-type {
+    font-size: 0.8rem;
+    color: var(--text-secondary);
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    margin-bottom: 5px;
+}
+
+.archetype-level {
+    font-size: 0.9rem;
+    font-weight: 500;
+    color: var(--primary-color);
+}
+
+.unlock-indicator {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background: var(--secondary-color);
+    color: white;
+    border-radius: 50%;
+    width: 25px;
+    height: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 0.8rem;
+}
+
+.unlock-info {
+    font-size: 0.9rem;
+    line-height: 1.4;
+    color: var(--text-secondary);
+    background: var(--surface-alt);
+    padding: 10px;
+    border-radius: 6px;
+    margin-top: 5px;
+}
+
+/* Archetype Nodes */
+.archetype-node {
+    background: var(--surface);
+    border: 2px solid var(--border);
+    border-radius: 12px;
+    padding: 15px;
+    text-align: center;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    position: relative;
+    min-height: 160px;
+    min-width: 180px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: var(--shadow);
+}
+
+.archetype-node:hover {
+    transform: translateY(-2px);
+    box-shadow: var(--shadow-lg);
+}
+
+/* Node States */
+.archetype-node.unlocked {
+    background: linear-gradient(135deg, var(--secondary-color-light, #e7f3ff), var(--surface));
+    border-color: var(--secondary-color);
+}
+
+.archetype-node.available {
+    background: linear-gradient(135deg, var(--warning-color-light, #fff3cd), var(--surface));
+    border-color: var(--warning-color);
+    box-shadow: 0 0 10px rgba(255, 193, 7, 0.3);
+}
+
+.archetype-node.locked {
+    background: var(--surface);
+    border-color: var(--border);
+    opacity: 0.6;
+}
+
+.archetype-node.locked .archetype-icon,
+.archetype-node.locked .archetype-name,
+.archetype-node.locked .archetype-type,
+.archetype-node.locked .archetype-level {
+    color: var(--text-muted, #666);
+}
+
+/* Node Types */
+.archetype-node.base {
+    border-width: 2px;
+}
+
+.archetype-node.advanced {
+    border-width: 3px;
+}
+
+.archetype-node.elite {
+    border-width: 3px;
+    background: linear-gradient(135deg, transparent, rgba(139, 92, 246, 0.1));
+}
+
+.archetype-node.royal {
+    border-width: 4px;
+    background: linear-gradient(135deg, transparent, rgba(251, 191, 36, 0.15));
+    position: relative;
+}
+
+.archetype-node.royal::before {
+    content: '';
+    position: absolute;
+    top: -2px;
+    left: -2px;
+    right: -2px;
+    bottom: -2px;
+    background: linear-gradient(45deg, #fbbf24, #f59e0b, #fbbf24);
+    border-radius: 14px;
+    z-index: -1;
+    opacity: 0.3;
+}
+
+/* Level Badge */
+.level-badge {
+    position: absolute;
+    top: -8px;
+    right: -8px;
+    background: var(--primary-color);
+    color: white;
+    font-size: 0.75rem;
+    padding: 0.25rem 0.5rem;
+    border-radius: 12px;
+    min-width: 24px;
+    text-align: center;
+}
+
+.archetype-node.unlocked .level-badge {
+    background: var(--secondary-color);
+}
+
+.archetype-node.available .level-badge {
+    background: var(--warning-color);
+}
+
+/* Connection Lines */
+.connection {
+    position: absolute;
+    background: var(--border);
+    z-index: 1;
+}
+
+.connection.unlocked {
+    background: var(--secondary-color);
+}
+
+.connection.available {
+    background: var(--warning-color);
+}
+
+.connection.horizontal {
+    height: 2px;
+}
+
+.connection.vertical {
+    width: 2px;
+}
+
+/* Pulse animation for available archetypes */
+@keyframes pulse {
+    0% { box-shadow: 0 0 0 0 rgba(245, 158, 11, 0.7); }
+    70% { box-shadow: 0 0 0 10px rgba(245, 158, 11, 0); }
+    100% { box-shadow: 0 0 0 0 rgba(245, 158, 11, 0); }
+}
+
+/* Modal Styles */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    animation: fadeIn 0.3s ease;
+}
+
+.modal.show {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.modal-content {
+    background: var(--surface);
+    border-radius: var(--radius-lg);
+    box-shadow: var(--shadow-lg);
+    max-width: 500px;
+    width: 90%;
+    max-height: 80vh;
+    overflow-y: auto;
+    animation: slideIn 0.3s ease;
+}
+
+.modal-header {
+    padding: 1.5rem;
+    border-bottom: 1px solid var(--border);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.modal-header h3 {
+    margin: 0;
+    color: var(--text-primary);
+}
+
+.modal-close {
+    background: none;
+    border: none;
+    font-size: 1.5rem;
+    color: var(--text-secondary);
+    cursor: pointer;
+    padding: 0.5rem;
+    border-radius: var(--radius);
+    transition: all 0.2s ease;
+}
+
+.modal-close:hover {
+    background: var(--surface-alt);
+    color: var(--text-primary);
+}
+
+.modal-body {
+    padding: 1.5rem;
+}
+
+.archetype-details {
+    display: grid;
+    gap: 1rem;
+}
+
+.detail-group {
+    display: grid;
+    gap: 0.5rem;
+}
+
+.detail-label {
+    font-weight: 600;
+    color: var(--text-primary);
+    font-size: 0.875rem;
+}
+
+.detail-value {
+    color: var(--text-secondary);
+    font-size: 0.875rem;
+}
+
+.requirement-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+}
+
+.requirement-tag {
+    padding: 0.25rem 0.5rem;
+    background: var(--surface-alt);
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    font-size: 0.75rem;
+    color: var(--text-secondary);
+}
+
+.requirement-tag.met {
+    background: var(--secondary-color);
+    color: white;
+    border-color: var(--secondary-color);
+}
+
+.unlock-button {
+    width: 100%;
+    margin-top: 1rem;
+}
+
+/* Animations */
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+@keyframes slideIn {
+    from { transform: translateY(-50px); opacity: 0; }
+    to { transform: translateY(0); opacity: 1; }
+}
+
+/* Responsive Design */
+@media (max-width: 1200px) {
+    .archetype-tree {
+        grid-template-columns: repeat(4, 1fr);
+        gap: 1.5rem;
+    }
+    
+    .archetype-node {
+        width: 100px;
+        height: 50px;
+        font-size: 0.75rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .archetype-container {
+        padding: 1rem;
+    }
+    
+    .archetype-tree {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1rem;
+        padding: 1rem;
+    }
+    
+    .archetype-node {
+        width: 90px;
+        height: 45px;
+        font-size: 0.7rem;
+    }
+    
+    .legend-items {
+        gap: 1rem;
+    }
+    
+    .modal-content {
+        width: 95%;
+        margin: 1rem;
+    }
+}
+
+/* Dark theme specific adjustments */
+[data-theme="dark"] .archetype-node.royal {
+    background: linear-gradient(135deg, var(--surface) 0%, #451a03 100%);
+}
+
+[data-theme="dark"] .archetype-node.royal.unlocked {
+    background: linear-gradient(135deg, var(--secondary-color) 0%, #f59e0b 100%);
+}
+
+[data-theme="dark"] .archetype-node.royal.available {
+    background: linear-gradient(135deg, var(--warning-color) 0%, #f59e0b 100%);
+}
