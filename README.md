@@ -244,10 +244,6 @@ If you encounter any issues or have suggestions:
 - Clear browser cache if you experience loading issues
 - Ensure you're using a modern browser
 
-## License
-
-This project is released under the MIT License. See LICENSE file for details.
-
 ---
 
 **Happy gaming and good luck achieving 100% completion! 👑**
