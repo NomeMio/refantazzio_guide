@@ -119,9 +119,23 @@
                 </select>
             </div>
             <div class="filter-group">
-                <button id="showCompleted" class="btn btn-secondary">
+                <button id="showCompleted" class="btn btn-secondary filter-btn">
                     <i class="fas fa-check"></i>
                     Show Completed Only
+                </button>
+                <button id="showIncomplete" class="btn btn-secondary filter-btn">
+                    <i class="fas fa-clock"></i>
+                    Show Incomplete Only
+                </button>
+            </div>
+            <div class="filter-group">
+                <label for="markUntilDate">Mark Complete Until:</label>
+                <select id="markUntilDate">
+                    <option value="">Select Date</option>
+                </select>
+                <button id="markUntilBtn" class="btn btn-primary" disabled>
+                    <i class="fas fa-check-double"></i>
+                    Mark All Until
                 </button>
             </div>
         </section>

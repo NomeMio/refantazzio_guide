@@ -393,6 +393,42 @@ body {
     box-shadow: 0 0 0 3px rgba(99, 102, 241, 0.1);
 }
 
+/* Mark Until functionality */
+.filter-group .btn-primary {
+    background: var(--primary-color);
+    color: white;
+    margin-left: 0.5rem;
+}
+
+.filter-group .btn-primary:hover:not(:disabled) {
+    background: var(--primary-dark);
+}
+
+.filter-group .btn-primary:disabled {
+    background: var(--border);
+    color: var(--text-secondary);
+    cursor: not-allowed;
+}
+
+/* Filter buttons */
+.filter-btn {
+    transition: all 0.2s ease;
+}
+
+.filter-btn.active {
+    background: var(--primary-color);
+    color: white;
+    border-color: var(--primary-color);
+}
+
+.filter-btn.active:hover {
+    background: var(--primary-dark);
+}
+
+.filter-group .filter-btn + .filter-btn {
+    margin-left: 0.5rem;
+}
+
 /* Main Content */
 .main-content {
     flex: 1;
@@ -609,6 +645,27 @@ body {
         align-items: flex-start;
         gap: 1rem;
         padding: 0;
+    }
+
+    .filter-group {
+        width: 100%;
+        flex-wrap: wrap;
+    }
+
+    .filter-group .btn-primary {
+        margin-left: 0;
+        margin-top: 0.5rem;
+        width: 100%;
+    }
+
+    .filter-group .filter-btn + .filter-btn {
+        margin-left: 0;
+        margin-top: 0.5rem;
+    }
+
+    .filter-group .filter-btn {
+        flex: 1;
+        min-width: 0;
     }
 
     .stats-grid {

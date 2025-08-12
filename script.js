@@ -55,10 +55,23 @@ class ProgressTracker {
         dateFilter.addEventListener('change', () => this.applyFilters());
         activityFilter.addEventListener('change', () => this.applyFilters());
 
-        // Show completed toggle
+        // Filter buttons (mutually exclusive)
         const showCompletedBtn = document.getElementById('showCompleted');
+        const showIncompleteBtn = document.getElementById('showIncomplete');
+        
         showCompletedBtn.addEventListener('click', () => {
             showCompletedBtn.classList.toggle('active');
+            if (showCompletedBtn.classList.contains('active')) {
+                showIncompleteBtn.classList.remove('active');
+            }
+            this.applyFilters();
+        });
+        
+        showIncompleteBtn.addEventListener('click', () => {
+            showIncompleteBtn.classList.toggle('active');
+            if (showIncompleteBtn.classList.contains('active')) {
+                showCompletedBtn.classList.remove('active');
+            }
             this.applyFilters();
         });
 
@@ -67,6 +80,21 @@ class ProgressTracker {
         resetBtn.addEventListener('click', () => {
             if (confirm('Are you sure you want to reset all progress? This cannot be undone.')) {
                 this.resetProgress();
+            }
+        });
+
+        // Mark complete until date functionality
+        const markUntilDate = document.getElementById('markUntilDate');
+        const markUntilBtn = document.getElementById('markUntilBtn');
+        
+        markUntilDate.addEventListener('change', () => {
+            markUntilBtn.disabled = !markUntilDate.value;
+        });
+        
+        markUntilBtn.addEventListener('click', () => {
+            const selectedDate = markUntilDate.value;
+            if (selectedDate) {
+                this.markCompleteUntilDate(selectedDate);
             }
         });
 
@@ -133,10 +161,16 @@ class ProgressTracker {
         this.renderWalkthrough();
     }
 
+    clearFilterButtons() {
+        document.getElementById('showCompleted').classList.remove('active');
+        document.getElementById('showIncomplete').classList.remove('active');
+    }
+
     applyFilters() {
         const dateFilter = document.getElementById('dateFilter').value;
         const activityFilter = document.getElementById('activityFilter').value;
         const showCompletedOnly = document.getElementById('showCompleted').classList.contains('active');
+        const showIncompleteOnly = document.getElementById('showIncomplete').classList.contains('active');
 
         let dataToFilter = this.filteredData || walkthroughData;
         let filteredData = {};
@@ -162,10 +196,14 @@ class ProgressTracker {
                     );
                 }
 
-                // Completed filter
+                // Completion status filter
                 if (showCompletedOnly) {
                     filteredTimeActivities = filteredTimeActivities.filter(activity => 
                         this.progress[activity.id]
+                    );
+                } else if (showIncompleteOnly) {
+                    filteredTimeActivities = filteredTimeActivities.filter(activity => 
+                        !this.progress[activity.id]
                     );
                 }
 
@@ -188,12 +226,20 @@ class ProgressTracker {
 
     populateFilters() {
         const dateFilter = document.getElementById('dateFilter');
+        const markUntilDate = document.getElementById('markUntilDate');
         
         Object.keys(walkthroughData).forEach(date => {
+            // Populate regular date filter
             const option = document.createElement('option');
             option.value = date;
             option.textContent = date;
             dateFilter.appendChild(option);
+            
+            // Populate mark until date filter
+            const markOption = document.createElement('option');
+            markOption.value = date;
+            markOption.textContent = `Until ${date}`;
+            markUntilDate.appendChild(markOption);
         });
     }
 
@@ -455,6 +501,52 @@ class ProgressTracker {
         });
 
         this.updateStats();
+    }
+
+    markCompleteUntilDate(untilDate) {
+        const confirmation = confirm(`Mark all activities as complete until ${untilDate}? This will mark everything up to and including that date.`);
+        if (!confirmation) return;
+
+        let markedCount = 0;
+        const dates = Object.keys(walkthroughData);
+        const sortedDates = dates.sort((a, b) => {
+            // Convert MM/DD to comparable format
+            const aDate = new Date(`2024/${a}`);
+            const bDate = new Date(`2024/${b}`);
+            return aDate - bDate;
+        });
+
+        const untilIndex = sortedDates.indexOf(untilDate);
+        if (untilIndex === -1) return;
+
+        // Mark all dates up to and including the selected date
+        for (let i = 0; i <= untilIndex; i++) {
+            const date = sortedDates[i];
+            const dayData = walkthroughData[date];
+
+            if (dayData.activities) {
+                Object.values(dayData.activities).forEach(timeSlot => {
+                    timeSlot.forEach(activity => {
+                        if (!this.progress[activity.id]) {
+                            this.progress[activity.id] = true;
+                            markedCount++;
+                        }
+                    });
+                });
+            }
+        }
+
+        this.saveProgress();
+        this.renderWalkthrough();
+        this.updateStats();
+
+        // Reset the selector
+        const markUntilDate = document.getElementById('markUntilDate');
+        const markUntilBtn = document.getElementById('markUntilBtn');
+        markUntilDate.value = '';
+        markUntilBtn.disabled = true;
+
+        alert(`Marked ${markedCount} new activities as complete until ${untilDate}!`);
     }
 
     hideLoading() {
