@@ -271,7 +271,8 @@ class ArchetypeTracker {
                 html += `
                     <div class="archetype-node ${statusClass} ${archetype.type}" 
                          style="border-color: ${archetype.color}"
-                         data-archetype-id="${id}">
+                         data-archetype-id="${id}"
+                         title="Click to view details for ${archetype.name}">
                         <div class="archetype-icon">
                             <i class="fas fa-${this.getArchetypeIcon(archetype.type)}"></i>
                         </div>
@@ -292,15 +293,25 @@ class ArchetypeTracker {
         html += '</div>';
         container.innerHTML = html;
         
-        // Add click event listeners
-        container.querySelectorAll('.archetype-node').forEach(node => {
+        // Add click event listeners to all archetype nodes
+        container.querySelectorAll('.archetype-node').forEach((node, index) => {
             const archetypeId = node.getAttribute('data-archetype-id');
-            node.addEventListener('click', () => {
-                const archetype = allArchetypes[archetypeId];
-                if (archetype) {
-                    this.showArchetypeDetails(archetype, availableArchetypes);
-                }
-            });
+            if (archetypeId) {
+                node.addEventListener('click', (e) => {
+                    e.preventDefault();
+                    e.stopPropagation();
+                    const archetype = allArchetypes[archetypeId];
+                    if (archetype) {
+                        // Ensure availableArchetypes is always an array
+                        const safeAvailableArchetypes = availableArchetypes || [];
+                        this.showArchetypeDetails(archetype, safeAvailableArchetypes);
+                    }
+                });
+                
+                // Ensure the node is clickable
+                node.style.pointerEvents = 'auto';
+                node.style.cursor = 'pointer';
+            }
         });
     }
 
@@ -321,9 +332,26 @@ class ArchetypeTracker {
 
         title.textContent = archetype.name;
 
-        const currentCharacterProgress = this.characterProgress[this.currentCharacter] || ['seeker', 'warrior'];
+        // Ensure characterProgress is properly initialized
+        if (!this.characterProgress) {
+            this.characterProgress = this.loadProgress();
+        }
+        
+        // Ensure currentCharacter is set
+        if (!this.currentCharacter) {
+            this.currentCharacter = 'protagonist';
+        }
+        
+        // Get current character progress with multiple fallbacks
+        let currentCharacterProgress = this.characterProgress[this.currentCharacter];
+        if (!currentCharacterProgress || !Array.isArray(currentCharacterProgress)) {
+            currentCharacterProgress = ['seeker', 'warrior'];
+            // Update the stored progress
+            this.characterProgress[this.currentCharacter] = currentCharacterProgress;
+        }
+        
         const isUnlocked = currentCharacterProgress.includes(archetype.id);
-        const isAvailable = availableArchetypes.includes(archetype.id);
+        const isAvailable = availableArchetypes && availableArchetypes.includes(archetype.id);
         
         // Check character-specific restrictions
         const characterRoyalArchetype = this.characters[this.currentCharacter]?.royal;
@@ -337,7 +365,13 @@ class ArchetypeTracker {
             const allArchetypes = archetypeHelpers.getAllArchetypes();
             const requirements = archetype.requires.map(reqId => {
                 const reqArchetype = allArchetypes[reqId];
-                const isMet = reqArchetype && this.unlockedArchetypes.includes(reqId);
+                let isMet = false;
+                try {
+                    isMet = reqArchetype && currentCharacterProgress && Array.isArray(currentCharacterProgress) && currentCharacterProgress.includes(reqId);
+                } catch (error) {
+                    console.error('Error checking requirement:', reqId, error);
+                    isMet = false;
+                }
                 return `<span class="requirement-tag ${isMet ? 'met' : ''}">${reqArchetype ? reqArchetype.name : reqId}</span>`;
             }).join('');
             requirementsHtml = `

@@ -226,7 +226,7 @@
     background: #374151;
     border: 2px solid #6b7280;
     color: #9ca3af;
-    cursor: not-allowed;
+    cursor: pointer;
     opacity: 0.6;
 }
 
@@ -435,6 +435,8 @@
 .archetype-node:hover {
     transform: translateY(-2px);
     box-shadow: var(--shadow-lg);
+    opacity: 1;
+    border-color: var(--primary) !important;
 }
 
 /* Node States */
@@ -453,6 +455,7 @@
     background: var(--surface);
     border-color: var(--border);
     opacity: 0.6;
+    cursor: pointer;
 }
 
 .archetype-node.locked .archetype-icon,

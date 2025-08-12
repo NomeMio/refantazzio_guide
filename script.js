@@ -13,6 +13,9 @@ class ProgressTracker {
         this.populateFilters();
         this.renderWalkthrough();
         this.updateStats();
+        
+        // Initialize filter button states
+        this.updateFilterButtonStates();
     }
 
     // Local Storage Management
@@ -59,21 +62,41 @@ class ProgressTracker {
         const showCompletedBtn = document.getElementById('showCompleted');
         const showIncompleteBtn = document.getElementById('showIncomplete');
         
-        showCompletedBtn.addEventListener('click', () => {
-            showCompletedBtn.classList.toggle('active');
-            if (showCompletedBtn.classList.contains('active')) {
-                showIncompleteBtn.classList.remove('active');
-            }
-            this.applyFilters();
-        });
-        
-        showIncompleteBtn.addEventListener('click', () => {
-            showIncompleteBtn.classList.toggle('active');
-            if (showIncompleteBtn.classList.contains('active')) {
-                showCompletedBtn.classList.remove('active');
-            }
-            this.applyFilters();
-        });
+        if (showCompletedBtn && showIncompleteBtn) {
+            showCompletedBtn.addEventListener('click', (e) => {
+                e.preventDefault();
+                const isCurrentlyActive = showCompletedBtn.classList.contains('active');
+                
+                // Toggle the clicked button
+                showCompletedBtn.classList.toggle('active');
+                
+                // Remove active from the other button if this one is now active
+                if (showCompletedBtn.classList.contains('active')) {
+                    showIncompleteBtn.classList.remove('active');
+                }
+                
+                // Force a visual update
+                this.updateFilterButtonStates();
+                this.applyFilters();
+            });
+            
+            showIncompleteBtn.addEventListener('click', (e) => {
+                e.preventDefault();
+                const isCurrentlyActive = showIncompleteBtn.classList.contains('active');
+                
+                // Toggle the clicked button
+                showIncompleteBtn.classList.toggle('active');
+                
+                // Remove active from the other button if this one is now active
+                if (showIncompleteBtn.classList.contains('active')) {
+                    showCompletedBtn.classList.remove('active');
+                }
+                
+                // Force a visual update
+                this.updateFilterButtonStates();
+                this.applyFilters();
+            });
+        }
 
         // Reset progress
         const resetBtn = document.getElementById('resetProgress');
@@ -164,6 +187,36 @@ class ProgressTracker {
     clearFilterButtons() {
         document.getElementById('showCompleted').classList.remove('active');
         document.getElementById('showIncomplete').classList.remove('active');
+    }
+
+    updateFilterButtonStates() {
+        const showCompletedBtn = document.getElementById('showCompleted');
+        const showIncompleteBtn = document.getElementById('showIncomplete');
+        
+        // Force a repaint by temporarily removing and re-adding classes
+        if (showCompletedBtn.classList.contains('active')) {
+            showCompletedBtn.style.backgroundColor = 'var(--primary-color, #6366f1)';
+            showCompletedBtn.style.color = 'white';
+            showCompletedBtn.style.borderColor = 'var(--primary-color, #6366f1)';
+            showCompletedBtn.setAttribute('data-active', 'true');
+        } else {
+            showCompletedBtn.style.backgroundColor = '';
+            showCompletedBtn.style.color = '';
+            showCompletedBtn.style.borderColor = '';
+            showCompletedBtn.setAttribute('data-active', 'false');
+        }
+        
+        if (showIncompleteBtn.classList.contains('active')) {
+            showIncompleteBtn.style.backgroundColor = 'var(--primary-color, #6366f1)';
+            showIncompleteBtn.style.color = 'white';
+            showIncompleteBtn.style.borderColor = 'var(--primary-color, #6366f1)';
+            showIncompleteBtn.setAttribute('data-active', 'true');
+        } else {
+            showIncompleteBtn.style.backgroundColor = '';
+            showIncompleteBtn.style.color = '';
+            showIncompleteBtn.style.borderColor = '';
+            showIncompleteBtn.setAttribute('data-active', 'false');
+        }
     }
 
     applyFilters() {

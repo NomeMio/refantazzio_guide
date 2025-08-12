@@ -413,16 +413,23 @@ body {
 /* Filter buttons */
 .filter-btn {
     transition: all 0.2s ease;
+    border: 1px solid var(--border, #e5e7eb);
+    background: var(--surface, #ffffff);
+    color: var(--text-primary, #374151);
 }
 
-.filter-btn.active {
-    background: var(--primary-color);
-    color: white;
-    border-color: var(--primary-color);
+.filter-btn.active,
+.filter-btn[data-active="true"] {
+    background: var(--primary-color, #6366f1) !important;
+    color: white !important;
+    border-color: var(--primary-color, #6366f1) !important;
+    box-shadow: 0 0 0 3px rgba(99, 102, 241, 0.2);
 }
 
-.filter-btn.active:hover {
-    background: var(--primary-dark);
+.filter-btn.active:hover,
+.filter-btn[data-active="true"]:hover {
+    background: var(--primary-dark, #4f46e5) !important;
+    border-color: var(--primary-dark, #4f46e5) !important;
 }
 
 .filter-group .filter-btn + .filter-btn {
