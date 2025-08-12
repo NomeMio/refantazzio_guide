@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Metaphor: ReFantazio Progress Tracker</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+    <div class="app">
+        <!-- Header -->
+        <header class="header">
+            <div class="header-content">
+                <h1 class="title">
+                    <i class="fas fa-crown"></i>
+                    Metaphor: ReFantazio
+                    <span class="subtitle">100% Progress Tracker</span>
+                </h1>
+                <div class="header-controls">
+                    <div class="search-box">
+                        <i class="fas fa-search"></i>
+                        <input type="text" id="searchInput" placeholder="Search activities, dates, or quests...">
+                    </div>
+                    <button id="resetProgress" class="btn btn-danger">
+                        <i class="fas fa-undo"></i>
+                        Reset Progress
+                    </button>
+                </div>
+            </div>
+        </header>
+
+        <!-- Progress Overview -->
+        <section class="progress-overview">
+            <div class="stats-grid">
+                <div class="stat-card">
+                    <div class="stat-number" id="overallProgress">0%</div>
+                    <div class="stat-label">Overall Progress</div>
+                    <div class="progress-bar">
+                        <div class="progress-fill" id="overallProgressBar"></div>
+                    </div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-number" id="completedDays">0</div>
+                    <div class="stat-label">Days Completed</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-number" id="completedQuests">0</div>
+                    <div class="stat-label">Quests Done</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-number" id="goldBeetles">0/50</div>
+                    <div class="stat-label">Gold Beetles</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-number" id="trophies">0</div>
+                    <div class="stat-label">Trophies</div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Filters -->
+        <section class="filters">
+            <div class="filter-group">
+                <label for="dateFilter">Filter by Date:</label>
+                <select id="dateFilter">
+                    <option value="">All Dates</option>
+                </select>
+            </div>
+            <div class="filter-group">
+                <label for="activityFilter">Activity Type:</label>
+                <select id="activityFilter">
+                    <option value="">All Activities</option>
+                    <option value="quest">Quests</option>
+                    <option value="beetle">Gold Beetles</option>
+                    <option value="trophy">Trophies</option>
+                    <option value="dungeon">Dungeons</option>
+                    <option value="debate">Debates</option>
+                    <option value="follower">Follower Events</option>
+                    <option value="cooking">Cooking</option>
+                    <option value="reading">Reading</option>
+                </select>
+            </div>
+            <div class="filter-group">
+                <button id="showCompleted" class="btn btn-secondary">
+                    <i class="fas fa-check"></i>
+                    Show Completed Only
+                </button>
+            </div>
+        </section>
+
+        <!-- Main Content -->
+        <main class="main-content">
+            <div class="walkthrough-container" id="walkthroughContainer">
+                <!-- Content will be loaded dynamically -->
+            </div>
+        </main>
+
+        <!-- Loading -->
+        <div id="loading" class="loading">
+            <div class="spinner"></div>
+            <p>Loading walkthrough data...</p>
+        </div>
+    </div>
+
+    <script src="walkthroughData.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
