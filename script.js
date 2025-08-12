@@ -7,6 +7,7 @@ class ProgressTracker {
     }
 
     init() {
+        this.loadTheme();
         this.hideLoading();
         this.setupEventListeners();
         this.populateFilters();
@@ -35,6 +36,12 @@ class ProgressTracker {
 
     // Event Listeners
     setupEventListeners() {
+        // Theme toggle
+        const themeToggle = document.getElementById('themeToggle');
+        themeToggle.addEventListener('click', () => {
+            this.toggleTheme();
+        });
+
         // Search functionality
         const searchInput = document.getElementById('searchInput');
         searchInput.addEventListener('input', (e) => {
@@ -397,6 +404,39 @@ class ProgressTracker {
         document.getElementById('completedQuests').textContent = quests;
         document.getElementById('goldBeetles').textContent = `${goldBeetles}/50`;
         document.getElementById('trophies').textContent = trophies;
+    }
+
+    // Theme Management
+    toggleTheme() {
+        const currentTheme = document.documentElement.getAttribute('data-theme');
+        const newTheme = currentTheme === 'dark' ? 'light' : 'dark';
+        
+        document.documentElement.setAttribute('data-theme', newTheme);
+        this.updateThemeIcon(newTheme);
+        this.saveTheme(newTheme);
+    }
+
+    updateThemeIcon(theme) {
+        const themeToggle = document.getElementById('themeToggle');
+        const icon = themeToggle.querySelector('i');
+        
+        if (theme === 'dark') {
+            icon.className = 'fas fa-sun';
+            themeToggle.title = 'Switch to light theme';
+        } else {
+            icon.className = 'fas fa-moon';
+            themeToggle.title = 'Switch to dark theme';
+        }
+    }
+
+    loadTheme() {
+        const savedTheme = localStorage.getItem('metaphor-theme') || 'light';
+        document.documentElement.setAttribute('data-theme', savedTheme);
+        this.updateThemeIcon(savedTheme);
+    }
+
+    saveTheme(theme) {
+        localStorage.setItem('metaphor-theme', theme);
     }
 
     resetProgress() {

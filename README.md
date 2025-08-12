@@ -1,6 +1,10 @@
 # Metaphor: ReFantazio Progress Tracker
 
+🌐 **Live Site**: [https://nomemio.github.io/refantazzio_guide/](https://nomemio.github.io/refantazzio_guide/)
+
 A web application for tracking your progress through the **Metaphor: ReFantazio 100% walkthrough guide** from PowerPyx. This interactive tool helps you keep track of completed activities, quests, collectibles, and more as you work toward 100% completion.
+
+> **⚡ Quick Start**: Visit the live site at [nomemio.github.io/refantazzio_guide](https://nomemio.github.io/refantazzio_guide/) - no installation required!
 
 ## ✨ Features
 
@@ -29,12 +33,18 @@ A web application for tracking your progress through the **Metaphor: ReFantazio 
 
 ## 🚀 Getting Started
 
-### Option 1: Direct File Opening
+### 🌐 Option 1: Use the Live Site (Recommended)
+**No installation needed!** Simply visit:
+**[https://nomemio.github.io/refantazzio_guide/](https://nomemio.github.io/refantazzio_guide/)**
+
+The site works instantly in any modern browser and automatically saves your progress.
+
+### 📁 Option 2: Direct File Opening
 1. Download or clone this repository
 2. Open `index.html` in any modern web browser
 3. Start tracking your progress!
 
-### Option 2: Local Server (Recommended)
+### 🖥️ Option 3: Local Server
 1. Navigate to the project directory
 2. Start a local server:
    ```bash
