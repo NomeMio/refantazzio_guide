@@ -496,6 +496,18 @@ class ArchetypeTracker {
         const unlocked = currentCharacterProgress.length;
         const availableArchetypes = archetypeHelpers.getUnlockableArchetypes(currentCharacterProgress);
         
+        // Calculate global unique archetypes unlocked across all characters
+        const globalUnlockedSet = new Set();
+        Object.values(this.characterProgress).forEach(characterArchetypes => {
+            if (Array.isArray(characterArchetypes)) {
+                characterArchetypes.forEach(archetypeId => {
+                    globalUnlockedSet.add(archetypeId);
+                });
+            }
+        });
+        const globalUnlockedCount = globalUnlockedSet.size;
+        const globalPercentage = Math.round((globalUnlockedCount / total) * 100);
+        
         // Count by type for current character
         const baseUnlocked = currentCharacterProgress.filter(id => {
             const archetype = allArchetypes[id];
@@ -509,8 +521,15 @@ class ArchetypeTracker {
 
         const percentage = Math.round((unlocked / total) * 100);
 
+        // Update current character stats
         document.getElementById('unlockedCount').textContent = `${unlocked}/${total}`;
         document.getElementById('archetypeProgressBar').style.width = `${percentage}%`;
+        
+        // Update global unique stats
+        document.getElementById('globalUnlockedCount').textContent = `${globalUnlockedCount}/${total}`;
+        document.getElementById('globalProgressBar').style.width = `${globalPercentage}%`;
+        
+        // Update other stats
         document.getElementById('availableCount').textContent = availableArchetypes.length;
         document.getElementById('baseUnlocked').textContent = `${baseUnlocked}/7`;
         document.getElementById('royalUnlocked').textContent = `${royalUnlocked}/6`;
