@@ -198,7 +198,13 @@ const walkthroughData = {
                     text: "Spend time with Hulkenberg (Rank 2)",
                     type: "follower",
                     tags: ["follower"]
-                }
+                },
+                {
+                    id: "0613_3",
+                    text: "Grand Trad, Sunshade Row – Talk to informant so at night it unlocks Secret of the Redgrass Shop",
+                    type: "shopping",
+                    tags: ["shopping", "information"]
+                },
             ],
             night: [
                 {
