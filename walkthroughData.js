@@ -200,7 +200,7 @@ const walkthroughData = {
                     tags: ["follower"]
                 },
                 {
-                    id: "0613_3",
+                    id: "0613_4",
                     text: "Grand Trad, Sunshade Row – Talk to informant so at night it unlocks Secret of the Redgrass Shop",
                     type: "shopping",
                     tags: ["shopping", "information"]
@@ -208,13 +208,13 @@ const walkthroughData = {
             ],
             night: [
                 {
-                    id: "0613_3",
+                    id: "0613_5",
                     text: "Grand Trad, Sunshade Row – Buy information from Informant (Secret of the Redgrass Shop)",
                     type: "shopping",
                     tags: ["shopping", "information"]
                 },
                 {
-                    id: "0613_4",
+                    id: "0613_6",
                     text: "Grand Trad, Hushed Honeybee Inn – Cook with Fabienne (save before, random dialogue) (+3 Tolerance)",
                     type: "cooking",
                     tags: ["cooking", "tolerance"]
