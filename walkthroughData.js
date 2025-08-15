@@ -2050,7 +2050,7 @@ const walkthroughData = {
                 },
                 {
                     id: "0818_9",
-                    text: "Gauntlet Runner – Cook Stale Black Beard",
+                    text: "Gauntlet Runner – Cook Stale Black Bread",
                     type: "cooking",
                     tags: ["cooking"]
                 },
@@ -2070,221 +2070,405 @@ const walkthroughData = {
         }
     },
     "08/19": {
-        title: "08/19 - Heismay's Key Quest",
+        title: "08/19 - Virga Island Quests & Dragon Temple",
         activities: {
             afternoon: [
                 {
                     id: "0819_1",
-                    text: "Brilehaven, Seabreeze Street – Spend time with Heismay. Accept 'A Sword Without a Sheath' quest (Rank 7)",
-                    type: "follower",
-                    tags: ["follower", "quest"]
+                    text: "Virga Island – Accept 'Peak Curiosity' quest from Dejected Man",
+                    type: "quest",
+                    tags: ["quest"]
+                },
+                {
+                    id: "0819_2",
+                    text: "Virga Island – Accept 'The Price of Hope' quest from Enthusiastic Woman",
+                    type: "quest",
+                    tags: ["quest"]
+                },
+                {
+                    id: "0819_3",
+                    text: "Virga Island, Golden Deer Hearth – Buy Secret of the Eugief's Stall from informant",
+                    type: "shopping",
+                    tags: ["shopping"]
+                },
+                {
+                    id: "0819_4",
+                    text: "Grand Trad, Recruitment Center – Accept 'The Greater One-Eyed Scoundrel' bounty",
+                    type: "quest",
+                    tags: ["quest", "bounty"]
+                },
+                {
+                    id: "0819_5",
+                    text: "Grand Trad, Comfort Concoctions – Collect Gold Beetle behind where pots used to be (27/50)",
+                    type: "beetle",
+                    tags: ["beetle"],
+                    beetleNumber: 27
+                },
+                {
+                    id: "0819_6",
+                    text: "Grand Trad, Comfort Concoctions – Buy Parchwater from shop",
+                    type: "shopping",
+                    tags: ["shopping"]
+                },
+                {
+                    id: "0819_7",
+                    text: "Virga Island – Turn in 'Ancestral Solution' main quest",
+                    type: "quest",
+                    tags: ["quest", "main"]
+                },
+                {
+                    id: "0819_8",
+                    text: "Virga Island – Accept 'A Guiding Gift' quest from Hoarse Fisher-Crone",
+                    type: "quest",
+                    tags: ["quest"]
+                },
+                {
+                    id: "0819_9",
+                    text: "Virga Island – Accept 'Save the Mourning Snakes' quest from Junah",
+                    type: "quest",
+                    tags: ["quest"]
+                },
+                {
+                    id: "0819_10",
+                    text: "Gauntlet Runner – Chart course for Dragon Temple",
+                    type: "misc",
+                    tags: ["travel"]
+                },
+                {
+                    id: "0819_11",
+                    text: "Gauntlet Runner – Read Bygone Days (+4 Tolerance)",
+                    type: "reading",
+                    tags: ["reading", "tolerance"]
+                },
+                {
+                    id: "0819_12",
+                    text: "Dragon Temple – Collect 3 Polar Stones, grind Magla Pills from Papyrga enemies",
+                    type: "dungeon",
+                    tags: ["dungeon", "grinding"]
+                },
+                {
+                    id: "0819_13",
+                    text: "Dragon Temple – Complete dungeon, defeat boss, unlock History Untold trophy",
+                    type: "dungeon",
+                    tags: ["dungeon", "trophy"]
                 }
             ],
             night: [
                 {
-                    id: "0819_2",
-                    text: "Gauntlet Runner – Read Top Secret Poetry! Do Not Read! (+5 Courage)",
-                    type: "reading",
-                    tags: ["reading", "courage"]
+                    id: "0819_14",
+                    text: "Story related battle only",
+                    type: "story",
+                    tags: ["story", "battle"]
                 }
             ]
         }
     },
     "08/20": {
-        title: "08/20 - Idlesday & Dragon God",
+        title: "08/20 - Virga Island & Land of Ceremony",
         activities: {
             afternoon: [
                 {
                     id: "0820_1",
-                    text: "Gauntlet Runner – Use Toilet on Idlesday for +1 Luck",
-                    type: "misc",
-                    tags: ["daily", "luck"]
+                    text: "Virga Island – Turn in 'A Guiding Gift' quest",
+                    type: "quest",
+                    tags: ["quest"]
                 },
                 {
                     id: "0820_2",
-                    text: "Gauntlet Runner – Finish reading Top Secret Poetry! Do Not Read! (+10 Courage)",
-                    type: "reading",
-                    tags: ["reading", "courage"]
+                    text: "Virga Island – Accept 'The Trial of Malnova' quest from Eupha",
+                    type: "quest",
+                    tags: ["quest"]
                 },
                 {
                     id: "0820_3",
-                    text: "Virga Island – Get key from building next to Chief's house (for Heismay quest)",
-                    type: "misc",
-                    tags: ["quest"]
-                },
-                {
-                    id: "0820_4",
-                    text: "Brilehaven, Seabreeze Street – Turn in 'A Sword Without a Sheath' quest",
-                    type: "quest",
-                    tags: ["quest"]
-                },
-                {
-                    id: "0820_5",
-                    text: "Gauntlet Runner – Chart course to Dragon Temple",
-                    type: "misc",
-                    tags: ["travel"]
-                },
-                {
-                    id: "0820_6",
-                    text: "Dragon Temple – Enter dungeon, defeat all enemies. Gold Beetle in top left area of dungeon (27/50)",
-                    type: "beetle",
-                    tags: ["beetle", "dungeon"],
-                    beetleNumber: 27
-                },
-                {
-                    id: "0820_7",
-                    text: "Dragon Temple – Complete dungeon",
-                    type: "dungeon",
-                    tags: ["dungeon"]
-                }
-            ]
-        }
-    },
-    "08/21": {
-        title: "08/21 - Alonzo & Right to Rule",
-        activities: {
-            afternoon: [
-                {
-                    id: "0821_1",
-                    text: "Brilehaven, Nightprowler – Complete 'The Right to Rule' quest (requires Rank 4 Tolerance)",
-                    type: "quest",
-                    tags: ["quest"]
-                },
-                {
-                    id: "0821_2",
-                    text: "Spend time with Bardon to turn in quest (Rank 7) (+4 Wisdom)",
-                    type: "follower",
-                    tags: ["follower", "wisdom"]
-                }
-            ],
-            night: [
-                {
-                    id: "0821_3",
-                    text: "Spend time with Alonzo (Rank 6)",
-                    type: "follower",
-                    tags: ["follower"]
-                }
-            ]
-        }
-    },
-    "08/22": {
-        title: "08/22 - Watchtower Wisdom",
-        activities: {
-            afternoon: [
-                {
-                    id: "0822_1",
-                    text: "Brilehaven, Angler's Inn Square – Spend time at Watchtower (+4 Wisdom)",
-                    type: "misc",
-                    tags: ["wisdom"]
-                }
-            ],
-            night: [
-                {
-                    id: "0822_2",
-                    text: "Brilehaven, Angler's Inn Square – Spend time at Watchtower (+4 Wisdom, Rank 4 Wisdom)",
-                    type: "misc",
-                    tags: ["wisdom"]
-                }
-            ]
-        }
-    },
-    "08/23": {
-        title: "08/23 - Story",
-        activities: {
-            all_day: [
-                {
-                    id: "0823_1",
-                    text: "Nothing but story progression",
-                    type: "story",
-                    tags: ["story"]
-                }
-            ]
-        }
-    },
-    "08/24": {
-        title: "08/24 - Oceanus",
-        activities: {
-            afternoon: [
-                {
-                    id: "0824_1",
-                    text: "Oceanus – Buy Shining Tuna and Tidal Shrimp from Fisherman",
-                    type: "shopping",
-                    tags: ["shopping"]
-                },
-                {
-                    id: "0824_2",
-                    text: "Oceanus – Collect Gold Beetle by sitting man (28/50)",
+                    text: "Virga Island – Talk to Clumsy Boy beside well to get Gold Beetle (28/50)",
                     type: "beetle",
                     tags: ["beetle"],
                     beetleNumber: 28
                 },
                 {
-                    id: "0824_3",
-                    text: "Oceanus – Collect Gold Beetle near temple entrance (29/50)",
+                    id: "0820_4",
+                    text: "Virga Island – Use Edeni's weather clearing ability at Land of Ceremony (optional)",
+                    type: "misc",
+                    tags: ["misc"]
+                },
+                {
+                    id: "0820_5",
+                    text: "Virga Island – Buy ingredients from Village Butcher",
+                    type: "shopping",
+                    tags: ["shopping"]
+                },
+                {
+                    id: "0820_6",
+                    text: "Gauntlet Runner – Chart course to Land of Ceremony",
+                    type: "misc",
+                    tags: ["travel"]
+                },
+                {
+                    id: "0820_7",
+                    text: "Gauntlet Runner – Cook Almighty Golden Stew",
+                    type: "cooking",
+                    tags: ["cooking"]
+                },
+                {
+                    id: "0820_8",
+                    text: "Gauntlet Runner – Spend time with Eupha (+6 Imagination)",
+                    type: "follower",
+                    tags: ["follower", "imagination"]
+                },
+                {
+                    id: "0820_9",
+                    text: "Event – Get Prismatic Sea Drawing (+4 Wisdom)",
+                    type: "misc",
+                    tags: ["wisdom"]
+                }
+            ],
+            night: [
+                {
+                    id: "0820_10",
+                    text: "Gauntlet Runner – Cook Sweeter than Poison…",
+                    type: "cooking",
+                    tags: ["cooking"]
+                },
+                {
+                    id: "0820_11",
+                    text: "Gauntlet Runner – Read New World Travel Diary (+4 Imagination)",
+                    type: "reading",
+                    tags: ["reading", "imagination"]
+                }
+            ]
+        }
+    },
+    "08/21": {
+        title: "08/21 - Land of Ceremony Dungeon",
+        activities: {
+            afternoon: [
+                {
+                    id: "0821_1",
+                    text: "Gauntlet Runner – Cook Sweeter than Poison…",
+                    type: "cooking",
+                    tags: ["cooking"]
+                },
+                {
+                    id: "0821_2",
+                    text: "Gauntlet Runner – Spend time with Eupha, choose option 3 (+6 Imagination)",
+                    type: "follower",
+                    tags: ["follower", "imagination"]
+                },
+                {
+                    id: "0821_3",
+                    text: "Land of Ceremony – Follow diagonal path on west side of Floor B2 to find Mossy Pillar for Neuras",
+                    type: "misc",
+                    tags: ["relic"]
+                },
+                {
+                    id: "0821_4",
+                    text: "Land of Ceremony – Collect Gold Beetle in corner near end of dungeon on first floor (29/50)",
                     type: "beetle",
                     tags: ["beetle"],
                     beetleNumber: 29
                 },
                 {
-                    id: "0824_4",
-                    text: "Oceanus – Accept 'Sanctum Offering' quest from old woman",
-                    type: "quest",
-                    tags: ["quest"]
-                },
+                    id: "0821_5",
+                    text: "Land of Ceremony – Complete dungeon, defeat boss, complete 'Trial of Malnova' quest, unlock Eupha (+4 Wisdom) (Rank 1)",
+                    type: "dungeon",
+                    tags: ["dungeon", "follower"]
+                }
+            ],
+            night: [
                 {
-                    id: "0824_5",
-                    text: "Oceanus Sanctum – Story progression",
+                    id: "0821_6",
+                    text: "Skipped due to entering dungeon",
                     type: "story",
                     tags: ["story"]
                 }
             ]
         }
     },
+    "08/22": {
+        title: "08/22 - Orbwise Path Journey",
+        activities: {
+            afternoon: [
+                {
+                    id: "0822_1",
+                    text: "Gauntlet Runner – Chart course for Orbwise Path",
+                    type: "misc",
+                    tags: ["travel"]
+                },
+                {
+                    id: "0822_2",
+                    text: "Gauntlet Runner – Cook Holistic Whitefish Platter",
+                    type: "cooking",
+                    tags: ["cooking"]
+                },
+                {
+                    id: "0822_3",
+                    text: "Gauntlet Runner – Read New World Travel Diary (+4 Imagination, Rank 4 Imagination)",
+                    type: "reading",
+                    tags: ["reading", "imagination"]
+                },
+                {
+                    id: "0822_4",
+                    text: "Orbwise Path – Collect Gold Beetle on right side of first floor (30/50)",
+                    type: "beetle",
+                    tags: ["beetle"],
+                    beetleNumber: 30
+                },
+                {
+                    id: "0822_5",
+                    text: "Orbwise Path – Go upstairs northwest, collect Gold Beetle in corner (31/50)",
+                    type: "beetle",
+                    tags: ["beetle"],
+                    beetleNumber: 31
+                },
+                {
+                    id: "0822_6",
+                    text: "Orbwise Path – Complete dungeon, defeat boss, complete 'Save the Mourning Snakes', unlock Junah (+4 Imagination) (Rank 1)",
+                    type: "dungeon",
+                    tags: ["dungeon", "follower"]
+                }
+            ],
+            night: [
+                {
+                    id: "0822_7",
+                    text: "Gauntlet Runner – Read Pride and Persuasion (+4 Eloquence, Rank 4 Eloquence)",
+                    type: "reading",
+                    tags: ["reading", "eloquence"]
+                }
+            ]
+        }
+    },
+    "08/23": {
+        title: "08/23 - Spire of Blind Faith Journey",
+        activities: {
+            afternoon: [
+                {
+                    id: "0823_1",
+                    text: "Gauntlet Runner – Chart course for Spire of Blind Faith, stop at Silento",
+                    type: "misc",
+                    tags: ["travel"]
+                },
+                {
+                    id: "0823_2",
+                    text: "Gauntlet Runner – Make backup save, go fishing with Tail Bait for 1 Lord of the Lake and 2 Queen's Honey Jars",
+                    type: "misc",
+                    tags: ["fishing"]
+                },
+                {
+                    id: "0823_3",
+                    text: "Silento – Buy Archetype EXP items, then continue journey",
+                    type: "shopping",
+                    tags: ["shopping"]
+                }
+            ],
+            night: [
+                {
+                    id: "0823_4",
+                    text: "Gauntlet Runner – Cook Secretest of Secrets",
+                    type: "cooking",
+                    tags: ["cooking"]
+                },
+                {
+                    id: "0823_5",
+                    text: "Spend time with Neuras, complete 'Relic Search: Youth's Folly', start 'Relic Search: Engineer's Destiny' (Rank 4)",
+                    type: "follower",
+                    tags: ["follower", "quest"]
+                }
+            ]
+        }
+    },
+    "08/24": {
+        title: "08/24 - Reading & Events",
+        activities: {
+            afternoon: [
+                {
+                    id: "0824_1",
+                    text: "Gauntlet Runner – Read The Future of Magic (+4 Wisdom)",
+                    type: "reading",
+                    tags: ["reading", "wisdom"]
+                },
+                {
+                    id: "0824_2",
+                    text: "Event – Get Sporico Cave Drawing (+4 Wisdom)",
+                    type: "misc",
+                    tags: ["wisdom"]
+                }
+            ],
+            night: [
+                {
+                    id: "0824_3",
+                    text: "Gauntlet Runner – Read The Future of Magic (+4 Wisdom)",
+                    type: "reading",
+                    tags: ["reading", "wisdom"]
+                }
+            ]
+        }
+    },
     "08/25": {
-        title: "08/25 - Temple Sanctum",
+        title: "08/25 - Spire of Blind Faith",
         activities: {
             afternoon: [
                 {
                     id: "0825_1",
-                    text: "Temple Sanctum – Collect Gold Beetle on 4th floor (30/50)",
-                    type: "beetle",
-                    tags: ["beetle", "dungeon"],
-                    beetleNumber: 30
+                    text: "Gauntlet Runner – Spend time with Eupha, choose option 2 (+6 Imagination)",
+                    type: "follower",
+                    tags: ["follower", "imagination"]
                 },
                 {
                     id: "0825_2",
-                    text: "Temple Sanctum – Complete dungeon, defeat boss",
+                    text: "Spire of Blind Faith – Fight through with Heat weather effect",
                     type: "dungeon",
                     tags: ["dungeon"]
+                },
+                {
+                    id: "0825_3",
+                    text: "Spire of Blind Faith – Collect Gold Beetle on 6th floor (32/50)",
+                    type: "beetle",
+                    tags: ["beetle"],
+                    beetleNumber: 32
+                },
+                {
+                    id: "0825_4",
+                    text: "Spire of Blind Faith – Complete dungeon, defeat boss",
+                    type: "dungeon",
+                    tags: ["dungeon"]
+                }
+            ],
+            night: [
+                {
+                    id: "0825_5",
+                    text: "Skipped due to entering dungeon",
+                    type: "story",
+                    tags: ["story"]
                 }
             ]
         }
     },
     "08/26": {
-        title: "08/26 - Oceanus Return",
+        title: "08/26 - Virga Island Quests & More",
         activities: {
             afternoon: [
                 {
                     id: "0826_1",
-                    text: "Oceanus – Accept 'A Fisherman's Feast' quest",
+                    text: "Virga Island – Turn in 'Peak Curiosity' quest (+4 Courage)",
                     type: "quest",
-                    tags: ["quest"]
+                    tags: ["quest", "courage"]
                 },
                 {
                     id: "0826_2",
-                    text: "Oceanus – Turn in 'Sanctum Offering' quest",
+                    text: "Virga Island – Talk to More to visit Akademia, turn in 'More's Task Chapter Four: Turmoil', accept 'More's Task Chapter Five: Resolve' (+4 Imagination) (Rank 6)",
                     type: "quest",
-                    tags: ["quest"]
+                    tags: ["quest", "imagination"]
                 },
                 {
                     id: "0826_3",
-                    text: "Oceanus – Turn in 'A Fisherman's Feast' quest by cooking Seafood Soup",
-                    type: "quest",
-                    tags: ["quest", "cooking"]
+                    text: "Akademia – Craft masks and vessels, unlock For Science! trophy",
+                    type: "misc",
+                    tags: ["crafting", "trophy"]
                 },
                 {
                     id: "0826_4",
-                    text: "Spend time with Hulkenberg (requires Rank 4 Wisdom) (Rank 7)",
+                    text: "Spend time with Eupha (Rank 2)",
                     type: "follower",
                     tags: ["follower"]
                 }
@@ -2292,7 +2476,7 @@ const walkthroughData = {
             night: [
                 {
                     id: "0826_5",
-                    text: "Spend time with Alonzo (Rank 7)",
+                    text: "Spend time with Junah (Rank 2)",
                     type: "follower",
                     tags: ["follower"]
                 }
@@ -2300,99 +2484,114 @@ const walkthroughData = {
         }
     },
     "08/27": {
-        title: "08/27 - Bardon Max Rank",
+        title: "08/27 - Follower Ranks",
         activities: {
             afternoon: [
                 {
                     id: "0827_1",
-                    text: "Spend time with Bardon (Rank 8 - MAX)",
+                    text: "Spend time with Hulkenberg (requires Rank 4 Wisdom) (Rank 7)",
                     type: "follower",
-                    tags: ["follower", "max_rank"]
+                    tags: ["follower"]
                 }
             ],
             night: [
                 {
                     id: "0827_2",
-                    text: "Spend time with Alonzo (Rank 8 - MAX)",
+                    text: "Spend time with Heismay (requires Rank 4 Imagination) (Rank 7)",
                     type: "follower",
-                    tags: ["follower", "max_rank"]
+                    tags: ["follower"]
                 }
             ]
         }
     },
     "08/28": {
-        title: "08/28 - Story",
+        title: "08/28 - Follower Ranks",
         activities: {
-            all_day: [
+            afternoon: [
                 {
                     id: "0828_1",
-                    text: "Nothing but story progression",
-                    type: "story",
-                    tags: ["story"]
+                    text: "Spend time with Eupha (Rank 3)",
+                    type: "follower",
+                    tags: ["follower"]
+                }
+            ],
+            night: [
+                {
+                    id: "0828_2",
+                    text: "Spend time with Junah (Rank 3)",
+                    type: "follower",
+                    tags: ["follower"]
                 }
             ]
         }
     },
     "08/29": {
-        title: "08/29 - Mage Academy",
+        title: "08/29 - Scoundrel's Hold Journey",
         activities: {
             afternoon: [
                 {
                     id: "0829_1",
-                    text: "Akademeia, Mage Academy – Collect Gold Beetle on 1st Floor (31/50)",
-                    type: "beetle",
-                    tags: ["beetle"],
-                    beetleNumber: 31
+                    text: "Gauntlet Runner – Chart course to Scoundrel's Hold, stop at Ligno",
+                    type: "misc",
+                    tags: ["travel"]
                 },
                 {
                     id: "0829_2",
-                    text: "Akademeia, Mage Academy – Collect Gold Beetle on 2nd Floor (32/50)",
-                    type: "beetle",
-                    tags: ["beetle"],
-                    beetleNumber: 32
+                    text: "Spend time with Hulkenberg (Rank 8)",
+                    type: "follower",
+                    tags: ["follower"]
                 },
                 {
                     id: "0829_3",
-                    text: "Akademeia, Mage Academy – Collect Gold Beetle on 3rd Floor (33/50)",
-                    type: "beetle",
-                    tags: ["beetle"],
-                    beetleNumber: 33
-                },
+                    text: "Ligno – Buy useful weapons, especially for Masked Dancer",
+                    type: "shopping",
+                    tags: ["shopping"]
+                }
+            ],
+            night: [
                 {
                     id: "0829_4",
-                    text: "Akademeia, Mage Academy – Accept 'A Researcher's Woe' quest",
-                    type: "quest",
-                    tags: ["quest"]
-                },
-                {
-                    id: "0829_5",
-                    text: "Akademeia, Mage Academy – Story progression",
-                    type: "story",
-                    tags: ["story"]
+                    text: "Spend time with Heismay (Rank 8)",
+                    type: "follower",
+                    tags: ["follower"]
                 }
             ]
         }
     },
     "08/30": {
-        title: "08/30 - Academy Trials",
+        title: "08/30 - Scoundrel's Hold Dungeon",
         activities: {
             afternoon: [
                 {
                     id: "0830_1",
-                    text: "Academy Trials dungeon – Complete trials",
+                    text: "Gauntlet Runner – Read Pride and Persuasion (+4 Eloquence)",
+                    type: "reading",
+                    tags: ["reading", "eloquence"]
+                },
+                {
+                    id: "0830_2",
+                    text: "Scoundrel's Hold – Go left at start, through hole in wall to get Parquet Chest for Neuras",
+                    type: "misc",
+                    tags: ["relic"]
+                },
+                {
+                    id: "0830_3",
+                    text: "Scoundrel's Hold – On last floor, climb ladder south, follow path to Gold Beetle (33/50)",
+                    type: "beetle",
+                    tags: ["beetle"],
+                    beetleNumber: 33
+                },
+                {
+                    id: "0830_4",
+                    text: "Scoundrel's Hold – Complete dungeon, defeat boss",
                     type: "dungeon",
                     tags: ["dungeon"]
                 }
-            ]
-        }
-    },
-    "08/31": {
-        title: "08/31 - Story",
-        activities: {
-            all_day: [
+            ],
+            night: [
                 {
-                    id: "0831_1",
-                    text: "Nothing but story progression",
+                    id: "0830_5",
+                    text: "Skipped due to entering dungeon",
                     type: "story",
                     tags: ["story"]
                 }
@@ -2400,318 +2599,254 @@ const walkthroughData = {
         }
     },
     "09/01": {
-        title: "09/01 - Altabury Heights",
+        title: "09/01 - Quest Turn-ins & More",
         activities: {
             afternoon: [
                 {
                     id: "0901_1",
-                    text: "Altabury Heights – Buy Altabury Honey from Water Merchant",
-                    type: "shopping",
-                    tags: ["shopping"]
+                    text: "Grand Trad, Recruitment Center – Turn in 'The Greater One-Eyed Scoundrel' bounty (+4 Courage)",
+                    type: "quest",
+                    tags: ["quest", "courage"]
                 },
                 {
                     id: "0901_2",
-                    text: "Altabury Heights – Accept 'The Academic's Escort' quest",
+                    text: "Grand Trad, Sunshade Row – Talk to More, go to Akademia, turn in 'More's Task Chapter Five: Resolve', accept 'More's Task Chapter Six: The End' (+4 Imagination) (Rank 7)",
                     type: "quest",
-                    tags: ["quest"]
+                    tags: ["quest", "imagination"]
                 },
                 {
                     id: "0901_3",
-                    text: "Altabury Heights – Collect Gold Beetle by stone stairs (34/50)",
-                    type: "beetle",
-                    tags: ["beetle"],
-                    beetleNumber: 34
-                },
+                    text: "Spend time with Alonzo (Rank 6)",
+                    type: "follower",
+                    tags: ["follower"]
+                }
+            ],
+            night: [
                 {
                     id: "0901_4",
-                    text: "Altabury Heights – Collect Gold Beetle near Gauntlet Runner (35/50)",
-                    type: "beetle",
-                    tags: ["beetle"],
-                    beetleNumber: 35
+                    text: "Grand Trad, Hushed Honeybee Inn – Make save, help Fabienne cook, unlock Chef in Training trophy, reload save",
+                    type: "misc",
+                    tags: ["trophy"]
                 },
                 {
                     id: "0901_5",
-                    text: "Gauntlet Runner – Chart course to Montario Opera House",
-                    type: "misc",
-                    tags: ["travel"]
-                },
-                {
-                    id: "0901_6",
-                    text: "Gauntlet Runner – Cook Tidal Shrimp Soup",
-                    type: "cooking",
-                    tags: ["cooking"]
-                },
-                {
-                    id: "0901_7",
-                    text: "Gauntlet Runner – Read new book A Thoughtless Lament (+5 Tolerance)",
-                    type: "reading",
-                    tags: ["reading", "tolerance"]
-                },
-                {
-                    id: "0901_8",
-                    text: "Montario Opera House – Complete dungeon, defeat boss",
-                    type: "dungeon",
-                    tags: ["dungeon"]
+                    text: "Spend time with Junah (Rank 4)",
+                    type: "follower",
+                    tags: ["follower"]
                 }
             ]
         }
     },
     "09/02": {
-        title: "09/02 - Altabury Return",
+        title: "09/02 - Follower Ranks",
         activities: {
             afternoon: [
                 {
                     id: "0902_1",
-                    text: "Altabury Heights – Turn in 'The Academic's Escort' quest",
-                    type: "quest",
-                    tags: ["quest"]
-                },
-                {
-                    id: "0902_2",
-                    text: "Akademeia, Mage Academy – Give Water Catalyst to Academic, turn in 'A Researcher's Woe' quest (+4 Wisdom)",
-                    type: "quest",
-                    tags: ["quest", "wisdom"]
-                },
-                {
-                    id: "0902_3",
-                    text: "Spend time with Hulkenberg (Rank 8 - MAX)",
+                    text: "Spend time with Eupha (Rank 4)",
                     type: "follower",
-                    tags: ["follower", "max_rank"]
+                    tags: ["follower"]
                 }
             ],
             night: [
                 {
-                    id: "0902_4",
-                    text: "Gauntlet Runner – Read A Thoughtless Lament (+5 Tolerance)",
-                    type: "reading",
-                    tags: ["reading", "tolerance"]
+                    id: "0902_2",
+                    text: "Spend time with Brigitta (requires Rank 4 Courage) (Rank 7)",
+                    type: "follower",
+                    tags: ["follower"]
                 }
             ]
         }
     },
     "09/03": {
-        title: "09/03 - Heismay Max Rank",
+        title: "09/03 - Follower Ranks",
         activities: {
             afternoon: [
                 {
                     id: "0903_1",
-                    text: "Spend time with Heismay (Rank 8 - MAX)",
+                    text: "Spend time with Maria (requires Rank 4 Tolerance) (Rank 7)",
                     type: "follower",
-                    tags: ["follower", "max_rank"]
+                    tags: ["follower"]
                 }
             ],
             night: [
                 {
                     id: "0903_2",
-                    text: "Gauntlet Runner – Finish reading A Thoughtless Lament (+10 Tolerance, Rank 5 Tolerance)",
-                    type: "reading",
-                    tags: ["reading", "tolerance"]
+                    text: "Spend time with Junah (requires Rank 4 Imagination) (Rank 5)",
+                    type: "follower",
+                    tags: ["follower"]
                 }
             ]
         }
     },
     "09/04": {
-        title: "09/04 - Story",
+        title: "09/04 - Follower Ranks",
         activities: {
-            all_day: [
+            afternoon: [
                 {
                     id: "0904_1",
-                    text: "Nothing but story progression",
+                    text: "Spend time with Eupha (Rank 5)",
+                    type: "follower",
+                    tags: ["follower"]
+                }
+            ],
+            night: [
+                {
+                    id: "0904_2",
+                    text: "Spend time with Neuras, complete 'Relic Search: Engineer's Destiny', start 'Relic Search: Bitter Memories' (Rank 5)",
+                    type: "follower",
+                    tags: ["follower", "quest"]
+                }
+            ]
+        }
+    },
+    "09/05": {
+        title: "09/05 - Maria Max Rank",
+        activities: {
+            afternoon: [
+                {
+                    id: "0905_1",
+                    text: "Spend time with Maria (Rank 8)",
+                    type: "follower",
+                    tags: ["follower"]
+                }
+            ],
+            night: [
+                {
+                    id: "0905_2",
+                    text: "Skipped due to story events",
                     type: "story",
                     tags: ["story"]
                 }
             ]
         }
     },
-    "09/05": {
-        title: "09/05 - Idlesday & Montario",
-        activities: {
-            afternoon: [
-                {
-                    id: "0905_1",
-                    text: "Gauntlet Runner – Use Toilet on Idlesday for +1 Luck",
-                    type: "misc",
-                    tags: ["daily", "luck"]
-                },
-                {
-                    id: "0905_2",
-                    text: "Montario – Buy Faina Fruit and Charred Porcheater from merchants",
-                    type: "shopping",
-                    tags: ["shopping"]
-                },
-                {
-                    id: "0905_3",
-                    text: "Montario – Collect Gold Beetle on right side of town (36/50)",
-                    type: "beetle",
-                    tags: ["beetle"],
-                    beetleNumber: 36
-                },
-                {
-                    id: "0905_4",
-                    text: "Montario – Collect Gold Beetle near General Store (37/50)",
-                    type: "beetle",
-                    tags: ["beetle"],
-                    beetleNumber: 37
-                },
-                {
-                    id: "0905_5",
-                    text: "Montario – Accept 'Tears for Fears' quest from Melancholy Lady",
-                    type: "quest",
-                    tags: ["quest"]
-                },
-                {
-                    id: "0905_6",
-                    text: "Montario – Accept 'A Draconic Bounty' quest from Recruitment Center",
-                    type: "quest",
-                    tags: ["quest", "bounty"]
-                },
-                {
-                    id: "0905_7",
-                    text: "Gauntlet Runner – Chart course to Kriegante Castle",
-                    type: "misc",
-                    tags: ["travel"]
-                },
-                {
-                    id: "0905_8",
-                    text: "Gauntlet Runner – Cook Honey Bread",
-                    type: "cooking",
-                    tags: ["cooking"]
-                },
-                {
-                    id: "0905_9",
-                    text: "Gauntlet Runner – Read Knowledge for Knuckleheads (choose 2) (+5 Imagination)",
-                    type: "reading",
-                    tags: ["reading", "imagination"]
-                },
-                {
-                    id: "0905_10",
-                    text: "Kriegante Castle – Collect Gold Beetle on floor B4 (38/50)",
-                    type: "beetle",
-                    tags: ["beetle", "dungeon"],
-                    beetleNumber: 38
-                },
-                {
-                    id: "0905_11",
-                    text: "Kriegante Castle – Complete dungeon, defeat boss",
-                    type: "dungeon",
-                    tags: ["dungeon"]
-                }
-            ]
-        }
-    },
     "09/06": {
-        title: "09/06 - Quest Turn-ins",
+        title: "09/06 - Unique Weapon Choice",
         activities: {
             afternoon: [
                 {
                     id: "0906_1",
-                    text: "Montario – Turn in 'A Draconic Bounty' quest (+4 Courage)",
-                    type: "quest",
-                    tags: ["quest", "bounty", "courage"]
-                },
-                {
-                    id: "0906_2",
-                    text: "Montario – Turn in 'Tears for Fears' quest by giving Honey Bread",
-                    type: "quest",
-                    tags: ["quest"]
-                },
-                {
-                    id: "0906_3",
-                    text: "Spend time with Maria (Rank 7)",
+                    text: "Spend time with party member of choice, get unique weapon for their main class",
                     type: "follower",
-                    tags: ["follower"]
-                }
-            ],
-            night: [
-                {
-                    id: "0906_4",
-                    text: "Gauntlet Runner – Read Knowledge for Knuckleheads (choose 1) (+5 Imagination)",
-                    type: "reading",
-                    tags: ["reading", "imagination"]
+                    tags: ["follower", "weapon"]
                 }
             ]
         }
     },
     "09/07": {
-        title: "09/07 - Brigitta Max Rank",
+        title: "09/07 - Reading",
         activities: {
             afternoon: [
                 {
                     id: "0907_1",
-                    text: "Spend time with Brigitta (requires Rank 4 Courage) (Rank 7)",
-                    type: "follower",
-                    tags: ["follower"]
+                    text: "Gauntlet Runner – Read How to Walk Outside the Island (+6 Tolerance)",
+                    type: "reading",
+                    tags: ["reading", "tolerance"]
                 }
             ],
             night: [
                 {
                     id: "0907_2",
-                    text: "Gauntlet Runner – Finish reading Knowledge for Knuckleheads (choose 2) (+10 Imagination, Rank 4 Imagination)",
+                    text: "Gauntlet Runner – Read How to Walk Outside the Island (+6 Tolerance)",
                     type: "reading",
-                    tags: ["reading", "imagination"]
+                    tags: ["reading", "tolerance"]
                 }
             ]
         }
     },
     "09/08": {
-        title: "09/08 - Neuras & Maria",
+        title: "09/08 - Reading & Events",
         activities: {
             afternoon: [
                 {
                     id: "0908_1",
-                    text: "Spend time with Neuras. Turn in 'Relic Search: Youth's Folly', accept 'Relic Search: Delusions of Grandeur' (Rank 4)",
-                    type: "follower",
-                    tags: ["follower", "quest"]
+                    text: "Gauntlet Runner – Finish reading How to Walk Outside the Island (+12 Tolerance, Rank 5 Tolerance)",
+                    type: "reading",
+                    tags: ["reading", "tolerance"]
+                },
+                {
+                    id: "0908_2",
+                    text: "Event – Get Colerodio Cliff Drawing (+4 Wisdom)",
+                    type: "misc",
+                    tags: ["wisdom"]
                 }
             ],
             night: [
                 {
-                    id: "0908_2",
-                    text: "Spend time with Maria (Rank 8 - MAX)",
-                    type: "follower",
-                    tags: ["follower", "max_rank"]
+                    id: "0908_3",
+                    text: "Gauntlet Runner – Read Pride and Persuasion (+4 Eloquence)",
+                    type: "reading",
+                    tags: ["reading", "eloquence"]
                 }
             ]
         }
     },
     "09/09": {
-        title: "09/09 - More's Task & Brigitta",
+        title: "09/09 - Altabury Heights Gold Beetles",
         activities: {
             afternoon: [
                 {
                     id: "0909_1",
-                    text: "Akademeia, Mage Academy – Turn in 'More's Task Chapter Four: Turmoil' (requires studying 35 Archetypes), accept 'More's Task Chapter Five: Enlightenment' (Rank 6) (+4 Imagination)",
-                    type: "follower",
-                    tags: ["follower", "archetype", "imagination"]
+                    text: "Gauntlet Runner – Read The Future of Magic (+4 Wisdom)",
+                    type: "reading",
+                    tags: ["reading", "wisdom"]
+                },
+                {
+                    id: "0909_2",
+                    text: "Event – Get Murky Graveyard Drawing (+4 Wisdom)",
+                    type: "misc",
+                    tags: ["wisdom"]
                 }
             ],
             night: [
                 {
-                    id: "0909_2",
-                    text: "Spend time with Brigitta (Rank 8 - MAX)",
-                    type: "follower",
-                    tags: ["follower", "max_rank"]
+                    id: "0909_3",
+                    text: "Altabury Heights, Lunlumo Approach – Collect Gold Beetle on right sidewalk (34/50)",
+                    type: "beetle",
+                    tags: ["beetle"],
+                    beetleNumber: 34
+                },
+                {
+                    id: "0909_4",
+                    text: "Altabury Heights, Lunlumo Approach – Collect Gold Beetle at bottom of stairs near bridge (35/50)",
+                    type: "beetle",
+                    tags: ["beetle"],
+                    beetleNumber: 35
+                },
+                {
+                    id: "0909_5",
+                    text: "Altabury Heights, Whitepeaks Magic Shop – Interact with pot to get Gold Beetle (36/50)",
+                    type: "beetle",
+                    tags: ["beetle"],
+                    beetleNumber: 36
+                },
+                {
+                    id: "0909_6",
+                    text: "Altabury Heights, Blue Sky Bridge – Collect Gold Beetle by pillars (37/50)",
+                    type: "beetle",
+                    tags: ["beetle"],
+                    beetleNumber: 37
+                },
+                {
+                    id: "0909_7",
+                    text: "Altabury Heights, Opera House Square – Collect Gold Beetle at end of giant bridge (38/50)",
+                    type: "beetle",
+                    tags: ["beetle"],
+                    beetleNumber: 38
                 }
             ]
         }
     },
     "09/10": {
-        title: "09/10 - Strohl Max Rank",
+        title: "09/10 - Story",
         activities: {
             afternoon: [
                 {
                     id: "0910_1",
-                    text: "Spend time with Strohl (Rank 9 - MAX)",
-                    type: "follower",
-                    tags: ["follower", "max_rank"]
-                }
-            ],
-            night: [
-                {
-                    id: "0910_2",
-                    text: "Gauntlet Runner – Read The Future of Magic (choose 1) (+4 Wisdom)",
-                    type: "reading",
-                    tags: ["reading", "wisdom"]
+                    text: "Story progression, unlock Mission Accomplished trophy",
+                    type: "story",
+                    tags: ["story", "trophy"]
                 }
             ]
         }
@@ -2722,7 +2857,7 @@ const walkthroughData = {
             all_day: [
                 {
                     id: "0911_1",
-                    text: "Nothing but story progression",
+                    text: "Story progression only",
                     type: "story",
                     tags: ["story"]
                 }
@@ -2730,172 +2865,1429 @@ const walkthroughData = {
         }
     },
     "09/13": {
-        title: "09/13 - The Skybound Avatar",
+        title: "09/13 - Altabury Heights Setup",
         activities: {
             afternoon: [
                 {
                     id: "0913_1",
-                    text: "Skybound Avatar dungeon – Complete story dungeon, choose to go to Mage Academy for 100%",
-                    type: "dungeon",
-                    tags: ["dungeon", "story"]
+                    text: "Altabury Heights, Dia Franco Street – Talk to Loveless to mark his Gauntlet Runner",
+                    type: "misc",
+                    tags: ["misc"]
+                },
+                {
+                    id: "0913_2",
+                    text: "Altabury Heights, Dia Franco Street – Talk to Rudolf to mark his Gauntlet Runner",
+                    type: "misc",
+                    tags: ["misc"]
+                },
+                {
+                    id: "0913_3",
+                    text: "Altabury Heights, Dia Franco Street – Buy ingredients from Dedicated Butcher",
+                    type: "shopping",
+                    tags: ["shopping"]
+                },
+                {
+                    id: "0913_4",
+                    text: "Altabury Heights, Dia Franco Street – Accept 'Warmth in Winter' quest from Portly Man",
+                    type: "quest",
+                    tags: ["quest"]
+                },
+                {
+                    id: "0913_5",
+                    text: "Altabury Heights, Opera House Square – Accept 'Proof of Power' quest from Obsessive Soldier",
+                    type: "quest",
+                    tags: ["quest"]
+                },
+                {
+                    id: "0913_6",
+                    text: "Altabury Heights, Recruitment Center – Accept 'The Fiend in the Frozen Forest' bounty",
+                    type: "quest",
+                    tags: ["quest", "bounty"]
+                },
+                {
+                    id: "0913_7",
+                    text: "Altabury Heights, Skyward Tavern – Collect Gold Beetle by barrels in corner (39/50)",
+                    type: "beetle",
+                    tags: ["beetle"],
+                    beetleNumber: 39
+                },
+                {
+                    id: "0913_8",
+                    text: "Spend time with Eupha, accept 'Wayward Shepherd' quest (requires Rank 4 Eloquence) (Rank 6)",
+                    type: "follower",
+                    tags: ["follower", "quest"]
+                }
+            ],
+            night: [
+                {
+                    id: "0913_9",
+                    text: "Altabury Heights, Blue Sky Bridge – Debate Julian at podium, choose option 3, unlock Debate Me trophy (+7 Eloquence, +2 Imagination)",
+                    type: "misc",
+                    tags: ["trophy", "eloquence", "imagination"]
                 }
             ]
         }
     },
     "09/14": {
-        title: "09/14 - Final Academics",
+        title: "09/14 - Fishing & More",
         activities: {
             afternoon: [
                 {
                     id: "0914_1",
-                    text: "Akademeia, Mage Academy – Must study 47 Archetypes total, turn in 'More's Task Chapter Five: Enlightenment', accept 'More's Task Epilogue: Ascension' (Rank 7) (+4 Imagination)",
-                    type: "follower",
-                    tags: ["follower", "archetype", "imagination"]
+                    text: "Blue Sky Bridge – Help Man in Pain to get another Tail Bait",
+                    type: "misc",
+                    tags: ["misc"]
+                },
+                {
+                    id: "0914_2",
+                    text: "Gauntlet Runner – Chart course to Orbwise Path for fishing",
+                    type: "misc",
+                    tags: ["travel"]
+                },
+                {
+                    id: "0914_3",
+                    text: "Gauntlet Runner – Cook Finisher Noodles",
+                    type: "cooking",
+                    tags: ["cooking"]
+                },
+                {
+                    id: "0914_4",
+                    text: "Gauntlet Runner – Make backup save, go fishing with Tail Bait for 1 Lord of the Lake and 2 Queen's Honey Jars",
+                    type: "misc",
+                    tags: ["fishing"]
+                },
+                {
+                    id: "0914_5",
+                    text: "Orbwise Path – Arrive and instantly leave",
+                    type: "misc",
+                    tags: ["travel"]
                 }
             ],
             night: [
                 {
-                    id: "0914_2",
-                    text: "Gauntlet Runner – Finish reading The Future of Magic (choose 1) (+8 Wisdom)",
-                    type: "reading",
-                    tags: ["reading", "wisdom"]
+                    id: "0914_6",
+                    text: "Spend time with Catherina (Rank 5)",
+                    type: "follower",
+                    tags: ["follower"]
                 }
             ]
         }
     },
     "09/15": {
-        title: "09/15 - Neuras & Final Prep",
+        title: "09/15 - Everfrost Forest",
         activities: {
             afternoon: [
                 {
                     id: "0915_1",
-                    text: "Spend time with Neuras. Turn in 'Relic Search: Delusions of Grandeur' (Rank 5) (+4 Wisdom)",
+                    text: "Gauntlet Runner – Chart course for Everfrost Forest",
+                    type: "misc",
+                    tags: ["travel"]
+                },
+                {
+                    id: "0915_2",
+                    text: "Gauntlet Runner – Cook Amber Stew",
+                    type: "cooking",
+                    tags: ["cooking"]
+                },
+                {
+                    id: "0915_3",
+                    text: "Spend time with Basilio (Rank 1)",
                     type: "follower",
-                    tags: ["follower", "wisdom"]
+                    tags: ["follower"]
+                },
+                {
+                    id: "0915_4",
+                    text: "Event – Get Solstice Crossing Drawing (+4 Wisdom)",
+                    type: "misc",
+                    tags: ["wisdom"]
+                },
+                {
+                    id: "0915_5",
+                    text: "Everfrost Forest – Collect Gold Beetle at bottom left of map (40/50)",
+                    type: "beetle",
+                    tags: ["beetle"],
+                    beetleNumber: 40
+                },
+                {
+                    id: "0915_6",
+                    text: "Everfrost Forest – Collect Panhandled Ore on right side for Neuras",
+                    type: "misc",
+                    tags: ["relic"]
+                },
+                {
+                    id: "0915_7",
+                    text: "Everfrost Forest – Complete dungeon, defeat boss",
+                    type: "dungeon",
+                    tags: ["dungeon"]
                 }
             ],
             night: [
                 {
-                    id: "0915_2",
-                    text: "Gauntlet Runner – Read Metaphysics for Morons (+5 Eloquence)",
-                    type: "reading",
-                    tags: ["reading", "eloquence"]
+                    id: "0915_8",
+                    text: "Skipped due to entering dungeon",
+                    type: "story",
+                    tags: ["story"]
                 }
             ]
         }
     },
     "09/16": {
-        title: "09/16 - Final Day Before Tournament",
+        title: "09/16 - Tower of Insolence",
         activities: {
             afternoon: [
                 {
                     id: "0916_1",
-                    text: "Spend time with Neuras (Rank 6)",
+                    text: "Altabury Heights, Recruitment Center – Turn in 'The Fiend in the Frozen Forest' bounty (+4 Courage)",
+                    type: "quest",
+                    tags: ["quest", "courage"]
+                },
+                {
+                    id: "0916_2",
+                    text: "Virga Island – Use Edeni's ability to clear weather on Tower of Insolence",
+                    type: "misc",
+                    tags: ["misc"]
+                },
+                {
+                    id: "0916_3",
+                    text: "Gauntlet Runner – Chart course to Tower of Insolence",
+                    type: "misc",
+                    tags: ["travel"]
+                },
+                {
+                    id: "0916_4",
+                    text: "Spend time with Junah (Rank 6)",
+                    type: "follower",
+                    tags: ["follower"]
+                },
+                {
+                    id: "0916_5",
+                    text: "Event – Get Decaying Estate Drawing (+4 Wisdom)",
+                    type: "misc",
+                    tags: ["wisdom"]
+                },
+                {
+                    id: "0916_6",
+                    text: "Tower of Insolence – Collect Gold Beetle on second floor (41/50)",
+                    type: "beetle",
+                    tags: ["beetle"],
+                    beetleNumber: 41
+                },
+                {
+                    id: "0916_7",
+                    text: "Tower of Insolence – Complete dungeon, defeat boss",
+                    type: "dungeon",
+                    tags: ["dungeon"]
+                }
+            ],
+            night: [
+                {
+                    id: "0916_8",
+                    text: "Skipped due to entering dungeon",
+                    type: "story",
+                    tags: ["story"]
+                }
+            ]
+        }
+    },
+    "09/17": {
+        title: "09/17 - Quest Turn-ins",
+        activities: {
+            afternoon: [
+                {
+                    id: "0917_1",
+                    text: "Altabury Heights, Opera House Square – Turn in 'Proof of Power' quest (+4 Courage)",
+                    type: "quest",
+                    tags: ["quest", "courage"]
+                },
+                {
+                    id: "0917_2",
+                    text: "Spend time with Basilio (Rank 2)",
                     type: "follower",
                     tags: ["follower"]
                 }
             ],
             night: [
                 {
-                    id: "0916_2",
-                    text: "Gauntlet Runner – Read Metaphysics for Morons (+5 Eloquence)",
-                    type: "reading",
-                    tags: ["reading", "eloquence"]
+                    id: "0917_3",
+                    text: "Spend time with Catherina (requires Rank 5 Tolerance) (Rank 6)",
+                    type: "follower",
+                    tags: ["follower"]
                 }
             ]
         }
     },
-    "09/17": {
-        title: "09/17-09/30 - Tournament Week",
+    "09/18": {
+        title: "09/18 - Bardon Boss Fight",
+        activities: {
+            afternoon: [
+                {
+                    id: "0918_1",
+                    text: "Spend time with Bardon, fight boss, complete 'The Right to Rule' quest (boss weak to Ice) (+4 Courage) (Rank 7)",
+                    type: "follower",
+                    tags: ["follower", "quest", "courage"]
+                }
+            ],
+            night: [
+                {
+                    id: "0918_2",
+                    text: "Spend time with Junah (Rank 7)",
+                    type: "follower",
+                    tags: ["follower"]
+                }
+            ]
+        }
+    },
+    "09/19": {
+        title: "09/19 - Mt. Vulkano",
+        activities: {
+            afternoon: [
+                {
+                    id: "0919_1",
+                    text: "Gauntlet Runner – Chart course for Mt. Vulkano",
+                    type: "misc",
+                    tags: ["travel"]
+                },
+                {
+                    id: "0919_2",
+                    text: "Spend time with Basilio (Rank 3)",
+                    type: "follower",
+                    tags: ["follower"]
+                },
+                {
+                    id: "0919_3",
+                    text: "Mt. Vulkano – Follow left ladder path to Gold Beetle, continue to find Stitched Sphere for Neuras (42/50)",
+                    type: "beetle",
+                    tags: ["beetle", "relic"],
+                    beetleNumber: 42
+                },
+                {
+                    id: "0919_4",
+                    text: "Mt. Vulkano – Floor B4, go up center ladder through hole for Rusty Greatsword",
+                    type: "misc",
+                    tags: ["misc"]
+                },
+                {
+                    id: "0919_5",
+                    text: "Mt. Vulkano – Complete dungeon, defeat boss, complete 'Wayward Shepherd' quest (+4 Eloquence, Rank 5 Eloquence)",
+                    type: "dungeon",
+                    tags: ["dungeon", "quest", "eloquence"]
+                }
+            ],
+            night: [
+                {
+                    id: "0919_6",
+                    text: "Skipped due to entering dungeon",
+                    type: "story",
+                    tags: ["story"]
+                }
+            ]
+        }
+    },
+    "09/20": {
+        title: "09/20 - Coliseum Battles",
+        activities: {
+            afternoon: [
+                {
+                    id: "0920_1",
+                    text: "Brilehaven, Coliseum – Ranked Battle (Silver 3) (+4 Courage, Rank 5 Courage)",
+                    type: "misc",
+                    tags: ["coliseum", "courage"]
+                }
+            ],
+            night: [
+                {
+                    id: "0920_2",
+                    text: "Spend time with Catherina (Rank 7)",
+                    type: "follower",
+                    tags: ["follower"]
+                }
+            ]
+        }
+    },
+    "09/21": {
+        title: "09/21 - Follower Ranks",
+        activities: {
+            afternoon: [
+                {
+                    id: "0921_1",
+                    text: "Spend time with Basilio (Rank 4)",
+                    type: "follower",
+                    tags: ["follower"]
+                }
+            ],
+            night: [
+                {
+                    id: "0921_2",
+                    text: "Spend time with Alonzo (requires Rank 5 Courage) (Rank 7)",
+                    type: "follower",
+                    tags: ["follower"]
+                }
+            ]
+        }
+    },
+    "09/22": {
+        title: "09/22 - Coliseum & Follower",
+        activities: {
+            afternoon: [
+                {
+                    id: "0922_1",
+                    text: "Brilehaven, Coliseum – Ranked Battle (Silver 2) (+4 Courage)",
+                    type: "misc",
+                    tags: ["coliseum", "courage"]
+                }
+            ],
+            night: [
+                {
+                    id: "0922_2",
+                    text: "Spend time with Catherina (Rank 8)",
+                    type: "follower",
+                    tags: ["follower"]
+                }
+            ]
+        }
+    },
+    "09/23": {
+        title: "09/23 - Story",
         activities: {
             all_day: [
                 {
-                    id: "0917_1",
-                    text: "Tournament Week - Story progression with various battles and events",
+                    id: "0923_1",
+                    text: "Story progression only",
                     type: "story",
-                    tags: ["story", "tournament"]
+                    tags: ["story"]
+                }
+            ]
+        }
+    },
+    "09/24": {
+        title: "09/24 - Plaza of Light (Missable!)",
+        activities: {
+            afternoon: [
+                {
+                    id: "0924_1",
+                    text: "Plaza of Light – After cutscene at fountain, collect Gold Beetle by burned houses (HIGHLY MISSABLE!) (43/50)",
+                    type: "beetle",
+                    tags: ["beetle", "missable"],
+                    beetleNumber: 43
+                },
+                {
+                    id: "0924_2",
+                    text: "Continue story progression, unlock His Majesty trophy",
+                    type: "story",
+                    tags: ["story", "trophy"]
+                }
+            ]
+        }
+    },
+    "09/25": {
+        title: "09/25 - Story",
+        activities: {
+            all_day: [
+                {
+                    id: "0925_1",
+                    text: "Story progression only",
+                    type: "story",
+                    tags: ["story"]
+                }
+            ]
+        }
+    },
+    "09/26": {
+        title: "09/26 - Many Quests & Gold Beetles",
+        activities: {
+            afternoon: [
+                {
+                    id: "0926_1",
+                    text: "Grand Trad, Sunshade Row – Turn in 'More's Task Chapter Six: The End' (+4 Imagination) (Rank 8)",
+                    type: "quest",
+                    tags: ["quest", "imagination"]
+                },
+                {
+                    id: "0926_2",
+                    text: "Grand Trad, Sunshade Row – Accept 'The Edge of Glory' from Ornamented Man, instantly turn in with Rusted Greatsword (+4 Wisdom, Rank 5 Wisdom)",
+                    type: "quest",
+                    tags: ["quest", "wisdom"]
+                },
+                {
+                    id: "0926_3",
+                    text: "Grand Trad, Sunlumeo Street – Accept 'The Queen of Cuisine: Soul' from Classy Woman",
+                    type: "quest",
+                    tags: ["quest"]
+                },
+                {
+                    id: "0926_4",
+                    text: "Grand Trad, Recruitment Center – Accept bounties: 'The Cockatrice in the Clouds', 'The Apostles of the Apocalypse', 'The Incarnate in the Woods'",
+                    type: "quest",
+                    tags: ["quest", "bounty"]
+                },
+                {
+                    id: "0926_5",
+                    text: "Brilehaven, Angler's Inn Square – Accept 'Trial of the Dragon: Mad Mischief' from Gabby Mustari",
+                    type: "quest",
+                    tags: ["quest"]
+                },
+                {
+                    id: "0926_6",
+                    text: "Virga Island – Accept 'Trial of the Dragon: Heroes' Rest' from Edeni",
+                    type: "quest",
+                    tags: ["quest"]
+                },
+                {
+                    id: "0926_7",
+                    text: "Altabury Heights, Blue Sky Bridge – Accept 'Trial of the Dragon: Bygone Legacy' from Enraged Mustari",
+                    type: "quest",
+                    tags: ["quest"]
+                },
+                {
+                    id: "0926_8",
+                    text: "Altabury Heights, Blue Sky Bridge – Accept 'Deliver Hot Spring Water' from Gentle Merchant",
+                    type: "quest",
+                    tags: ["quest"]
+                },
+                {
+                    id: "0926_9",
+                    text: "Martira, Cattleracket Road – Collect Gold Beetle by cow at bottom of stairs (44/50)",
+                    type: "beetle",
+                    tags: ["beetle"],
+                    beetleNumber: 44
+                },
+                {
+                    id: "0926_10",
+                    text: "Martira, MesmerEyes Apothecary – Collect Gold Beetle by sack of grain (45/50)",
+                    type: "beetle",
+                    tags: ["beetle"],
+                    beetleNumber: 45
+                },
+                {
+                    id: "0926_11",
+                    text: "Grand Trad, Regalith Grand Cathedral – Collect Gold Beetle in merchant stalls (46/50)",
+                    type: "beetle",
+                    tags: ["beetle"],
+                    beetleNumber: 46
+                },
+                {
+                    id: "0926_12",
+                    text: "Brilehaven, Arenafront Wharf – Optional: Turn in Gold Beetles to unlock All that Glitters trophy",
+                    type: "misc",
+                    tags: ["trophy"]
+                },
+                {
+                    id: "0926_13",
+                    text: "Gauntlet Runner – Chart course to Abandoned Path, stop at Malva",
+                    type: "misc",
+                    tags: ["travel"]
+                },
+                {
+                    id: "0926_14",
+                    text: "Gauntlet Runner – Read Literacy Workbook (+6 Imagination)",
+                    type: "reading",
+                    tags: ["reading", "imagination"]
+                },
+                {
+                    id: "0926_15",
+                    text: "Encounter and fight Loveless's Gauntlet Runner",
+                    type: "misc",
+                    tags: ["battle"]
+                },
+                {
+                    id: "0926_16",
+                    text: "Malva – Arrive, unlock Globetrotter trophy, buy Altabury Wheat Flour and Durable Spider Silk",
+                    type: "shopping",
+                    tags: ["shopping", "trophy"]
+                }
+            ],
+            night: [
+                {
+                    id: "0926_17",
+                    text: "Gauntlet Runner – Cook Indestructible Honey Cake",
+                    type: "cooking",
+                    tags: ["cooking"]
+                },
+                {
+                    id: "0926_18",
+                    text: "Gauntlet Runner – Read Literacy Workbook (+6 Imagination, Rank 5 Imagination)",
+                    type: "reading",
+                    tags: ["reading", "imagination"]
+                }
+            ]
+        }
+    },
+    "09/27": {
+        title: "09/27 - Abandoned Path",
+        activities: {
+            afternoon: [
+                {
+                    id: "0927_1",
+                    text: "Gauntlet Runner – Cook Enchanted Pottage",
+                    type: "cooking",
+                    tags: ["cooking"]
+                },
+                {
+                    id: "0927_2",
+                    text: "Gauntlet Runner – Read Literacy Workbook (finish) (+12 Imagination, unlock 'Bookworm' trophy)",
+                    type: "reading",
+                    tags: ["reading", "imagination", "trophy"]
+                },
+                {
+                    id: "0927_3",
+                    text: "Abandoned Path – Collect Gold Beetle at northmost point (47/50)",
+                    type: "collection",
+                    tags: ["collection", "gold_beetle"]
+                },
+                {
+                    id: "0927_4",
+                    text: "Abandoned Path – Clear dungeon and defeat boss",
+                    type: "dungeon",
+                    tags: ["dungeon", "boss"]
+                }
+            ],
+            night: [
+                {
+                    id: "0927_5",
+                    text: "Skipped due to entering a dungeon",
+                    type: "story",
+                    tags: ["story"]
+                }
+            ]
+        }
+    },
+    "09/28": {
+        title: "09/28 - Quest Turn-ins & Basilio",
+        activities: {
+            afternoon: [
+                {
+                    id: "0928_1",
+                    text: "Grand Trad, Recruitment Center – Turn in 'The Incarnate of the Woods' bounty (+4 Courage)",
+                    type: "quest",
+                    tags: ["quest", "bounty", "courage"]
+                },
+                {
+                    id: "0928_2",
+                    text: "Grand Trad, Sunlumeo Street – Turn in 'The Queen of Cuisine: Soul' quest (+4 Eloquence)",
+                    type: "quest",
+                    tags: ["quest", "eloquence"]
+                },
+                {
+                    id: "0928_3",
+                    text: "Altabury Heights, Dia Franco Street – Accept 'Defeat Milo' quest from Loveless",
+                    type: "quest",
+                    tags: ["quest"]
+                },
+                {
+                    id: "0928_4",
+                    text: "Altabury Heights, Dia Franco Street – Turn in 'Warmth in Winter' quest (+4 Tolerance)",
+                    type: "quest",
+                    tags: ["quest", "tolerance"]
+                },
+                {
+                    id: "0928_5",
+                    text: "Altabury Heights, Lunlumo Approach – Talk to Milo to mark his Gauntlet Runner",
+                    type: "map",
+                    tags: ["map"]
+                },
+                {
+                    id: "0928_6",
+                    text: "Spend time with Basilio (Rank 5)",
+                    type: "follower",
+                    tags: ["follower"]
+                }
+            ],
+            night: [
+                {
+                    id: "0928_7",
+                    text: "Spend time with Neuras. Complete 'Relic Search: Bitter Memories', start 'Relic Search: A Dream's Origin' (Rank 6)",
+                    type: "follower",
+                    tags: ["follower", "quest"]
+                }
+            ]
+        }
+    },
+    "09/29": {
+        title: "09/29 - Eupha & Neuras Progress",
+        activities: {
+            afternoon: [
+                {
+                    id: "0929_1",
+                    text: "Spend time with Eupha. Requires Rank 5 Wisdom (Rank 7)",
+                    type: "follower",
+                    tags: ["follower", "wisdom"]
+                }
+            ],
+            night: [
+                {
+                    id: "0929_2",
+                    text: "Spend time with Neuras. Complete 'Relic Search: A Dream's Origin', start 'Petty Thief' (Rank 7)",
+                    type: "follower",
+                    tags: ["follower", "quest"]
+                }
+            ]
+        }
+    },
+    "09/30": {
+        title: "09/30 - Jin & Alonzo",
+        activities: {
+            afternoon: [
+                {
+                    id: "0930_1",
+                    text: "Grand Trad, Regalith Grand Cathedral – Talk to Grand Cathedral Guard to mark Jin's Gauntlet Runner",
+                    type: "map",
+                    tags: ["map"]
+                },
+                {
+                    id: "0930_2",
+                    text: "Spend time with Basilio. Requires Rank 5 Imagination (Rank 6)",
+                    type: "follower",
+                    tags: ["follower", "imagination"]
+                }
+            ],
+            night: [
+                {
+                    id: "0930_3",
+                    text: "Spend time with Alonzo. Accept 'A Rake's Last Wish' quest (Rank 8)",
+                    type: "follower",
+                    tags: ["follower", "quest"]
                 }
             ]
         }
     },
     "10/01": {
-        title: "10/01 - Grand Trad Return",
+        title: "10/01 - Bardon & Dataram",
         activities: {
             afternoon: [
                 {
                     id: "1001_1",
-                    text: "Grand Trad – Check new areas that opened up after story events",
-                    type: "exploration",
-                    tags: ["exploration"]
-                },
+                    text: "Spend time with Bardon (Rank 8)",
+                    type: "follower",
+                    tags: ["follower"]
+                }
+            ],
+            night: [
                 {
                     id: "1001_2",
-                    text: "Grand Trad, Sunshade Row – Collect Gold Beetle by church entrance (39/50)",
-                    type: "beetle",
-                    tags: ["beetle"],
-                    beetleNumber: 39
+                    text: "Brilehaven, Angler's Inn Square – Talk to Dataram to complete 'A Rake's Last Wish'",
+                    type: "quest",
+                    tags: ["quest"]
                 },
                 {
                     id: "1001_3",
-                    text: "Grand Trad, Sunlumeo Street – Collect Gold Beetle in Royal Quarter (40/50)",
-                    type: "beetle",
-                    tags: ["beetle"],
-                    beetleNumber: 40
+                    text: "Spend time with Junah (Rank 8)",
+                    type: "follower",
+                    tags: ["follower"]
                 }
             ]
         }
     },
     "10/02": {
-        title: "10/02 - Tyrant's Star",
+        title: "10/02 - Brother's Mercy & Brigitta",
         activities: {
             afternoon: [
                 {
                     id: "1002_1",
-                    text: "Tyrant's Star dungeon – Collect Gold Beetle on floor 4 (41/50)",
-                    type: "beetle",
-                    tags: ["beetle", "dungeon"],
-                    beetleNumber: 41
-                },
+                    text: "Spend time with Basilio. Accept 'A Brother's Mercy' quest (Rank 7)",
+                    type: "follower",
+                    tags: ["follower", "quest"]
+                }
+            ],
+            night: [
                 {
                     id: "1002_2",
-                    text: "Tyrant's Star dungeon – Complete dungeon",
-                    type: "dungeon",
-                    tags: ["dungeon"]
+                    text: "Spend time with Brigitta (Rank 8)",
+                    type: "follower",
+                    tags: ["follower"]
                 }
             ]
         }
     },
     "10/03": {
-        title: "10/03-10/25 - Final Dungeon & Ending",
+        title: "10/03 - Manor of the Ascendant",
         activities: {
-            all_day: [
+            afternoon: [
                 {
                     id: "1003_1",
-                    text: "Final story progression through multiple dungeons and boss fights leading to the ending",
+                    text: "Gauntlet Runner – Chart course to Manor of the Ascendant",
+                    type: "travel",
+                    tags: ["travel"]
+                },
+                {
+                    id: "1003_2",
+                    text: "Gauntlet Runner – Cook Adamantine Honey Cake",
+                    type: "cooking",
+                    tags: ["cooking"]
+                },
+                {
+                    id: "1003_3",
+                    text: "Spend time with Eupha (Rank 8)",
+                    type: "follower",
+                    tags: ["follower"]
+                },
+                {
+                    id: "1003_4",
+                    text: "Manor of the Ascendant – Collect Gold Beetle after crossing beams on 2nd floor (48/50)",
+                    type: "collection",
+                    tags: ["collection", "gold_beetle"]
+                },
+                {
+                    id: "1003_5",
+                    text: "Manor of the Ascendant – Clear dungeon and defeat boss",
+                    type: "dungeon",
+                    tags: ["dungeon", "boss"]
+                }
+            ],
+            night: [
+                {
+                    id: "1003_6",
+                    text: "Skipped due to entering a dungeon",
                     type: "story",
-                    tags: ["story", "final"]
+                    tags: ["story"]
+                }
+            ]
+        }
+    },
+    "10/04": {
+        title: "10/04 - Disgraced Ruins & Cuisine King",
+        activities: {
+            afternoon: [
+                {
+                    id: "1004_1",
+                    text: "Grand Trad, Recruitment Center – Turn in 'The Cockatrice in the Clouds' bounty (+4 Courage)",
+                    type: "quest",
+                    tags: ["quest", "bounty", "courage"]
+                },
+                {
+                    id: "1004_2",
+                    text: "Gauntlet Runner – Chart course to Disgraced Ruins",
+                    type: "travel",
+                    tags: ["travel"]
+                },
+                {
+                    id: "1004_3",
+                    text: "Gauntlet Runner – Cook Precision Fermented Ribs Sublime Spoonful (unlock 'Cuisine King' trophy)",
+                    type: "cooking",
+                    tags: ["cooking", "trophy"]
+                },
+                {
+                    id: "1004_4",
+                    text: "During event: Get Malibelo Stope Drawing (unlock 'Vista Viewer' trophy) (+4 Wisdom)",
+                    type: "story",
+                    tags: ["story", "wisdom", "trophy"]
+                },
+                {
+                    id: "1004_5",
+                    text: "Disgraced Ruins – Collect Gold Beetle at start, follow left path (49/50)",
+                    type: "collection",
+                    tags: ["collection", "gold_beetle"]
+                },
+                {
+                    id: "1004_6",
+                    text: "Disgraced Ruins – Clear dungeon and defeat boss",
+                    type: "dungeon",
+                    tags: ["dungeon", "boss"]
+                }
+            ],
+            night: [
+                {
+                    id: "1004_7",
+                    text: "Skipped due to entering a dungeon",
+                    type: "story",
+                    tags: ["story"]
+                }
+            ]
+        }
+    },
+    "10/05": {
+        title: "10/05 - Final Bounty & Hot Spring",
+        activities: {
+            afternoon: [
+                {
+                    id: "1005_1",
+                    text: "Grand Trad, Recruitment Center – Turn in 'The Apostles of Apocalypse' bounty",
+                    type: "quest",
+                    tags: ["quest", "bounty"]
+                },
+                {
+                    id: "1005_2",
+                    text: "Spend time with Basilio. Requires Rank 5 Eloquence. Complete 'A Brother's Mercy' (+4 Tolerance) (Rank 8)",
+                    type: "follower",
+                    tags: ["follower", "quest", "tolerance", "eloquence"]
+                }
+            ],
+            night: [
+                {
+                    id: "1005_3",
+                    text: "Altabury Heights, Blue Sky Bridge – Visit Hot Spring to get Hot Spring Water",
+                    type: "collection",
+                    tags: ["collection"]
+                }
+            ]
+        }
+    },
+    "10/06": {
+        title: "10/06 - Final Gold Beetle & Jin Battle",
+        activities: {
+            afternoon: [
+                {
+                    id: "1006_1",
+                    text: "Altabury Heights, Blue Sky Bridge – Turn in 'Deliver Hot Spring Water' quest (get Gold Beetle 50/50)",
+                    type: "quest",
+                    tags: ["quest", "gold_beetle", "collection"]
+                },
+                {
+                    id: "1006_2",
+                    text: "Brilehaven, Arenafront Wharf – Turn in all Gold Beetles to Elderly Entomophile (unlock 'All that Glitters' trophy)",
+                    type: "quest",
+                    tags: ["quest", "collection", "trophy"]
+                },
+                {
+                    id: "1006_3",
+                    text: "Gauntlet Runner – Chart course to Jin's Gauntlet Runner",
+                    type: "travel",
+                    tags: ["travel"]
+                },
+                {
+                    id: "1006_4",
+                    text: "Gauntlet Runner – Cook Sublime Spoonful (unlock 'Cuisine King' trophy)",
+                    type: "cooking",
+                    tags: ["cooking", "trophy"]
+                },
+                {
+                    id: "1006_5",
+                    text: "Defeat Jin, complete 'Petty Thief' for Neuras (unlock 'Hearts as One' trophy) (Rank 8)",
+                    type: "battle",
+                    tags: ["battle", "quest", "follower", "trophy"]
+                }
+            ],
+            night: [
+                {
+                    id: "1006_6",
+                    text: "Free time or catch up on missed content",
+                    type: "free",
+                    tags: ["free"]
+                }
+            ]
+        }
+    },
+    "10/07": {
+        title: "10/07 - Milo Battle & Coliseum",
+        activities: {
+            afternoon: [
+                {
+                    id: "1007_1",
+                    text: "Gauntlet Runner – Chart course to Milo's Gauntlet Runner",
+                    type: "travel",
+                    tags: ["travel"]
+                },
+                {
+                    id: "1007_2",
+                    text: "Gauntlet Runner – Free time",
+                    type: "free",
+                    tags: ["free"]
+                }
+            ],
+            night: [
+                {
+                    id: "1007_3",
+                    text: "Altabury Heights, Dia Franco Street – Turn in 'Defeat Milo' quest",
+                    type: "quest",
+                    tags: ["quest"]
+                },
+                {
+                    id: "1007_4",
+                    text: "Brilehaven, Coliseum – Ranked Battle (Silver 1) (+4 Courage)",
+                    type: "coliseum",
+                    tags: ["coliseum", "courage"]
+                }
+            ]
+        }
+    },
+    "10/08": {
+        title: "10/08 - Skybound Avatar",
+        activities: {
+            afternoon: [
+                {
+                    id: "1008_1",
+                    text: "Gauntlet Runner – Chart course to Skybound Avatar",
+                    type: "travel",
+                    tags: ["travel"]
+                },
+                {
+                    id: "1008_2",
+                    text: "Skybound Avatar – Defeat boss (unlock 'Skybound Hope' and 'Worldly Wisdom' trophies)",
+                    type: "dungeon",
+                    tags: ["dungeon", "boss", "trophy"]
+                }
+            ],
+            night: [
+                {
+                    id: "1008_3",
+                    text: "Skipped due to entering a dungeon",
+                    type: "story",
+                    tags: ["story"]
+                }
+            ]
+        }
+    },
+    "10/09": {
+        title: "10/09 - Trial of the Dragon: Mad Mischief",
+        activities: {
+            afternoon: [
+                {
+                    id: "1009_1",
+                    text: "Gauntlet Runner – Chart course to Forsaken Tower",
+                    type: "travel",
+                    tags: ["travel"]
+                },
+                {
+                    id: "1009_2",
+                    text: "Gauntlet Runner – Free time",
+                    type: "free",
+                    tags: ["free"]
+                },
+                {
+                    id: "1009_3",
+                    text: "Forsaken Tower – Defeat dragon boss to complete 'Trial of the Dragon: Mad Mischief'",
+                    type: "dungeon",
+                    tags: ["dungeon", "boss", "quest"]
+                }
+            ],
+            night: [
+                {
+                    id: "1009_4",
+                    text: "Skipped due to entering a dungeon",
+                    type: "story",
+                    tags: ["story"]
+                }
+            ]
+        }
+    },
+    "10/10": {
+        title: "10/10 - Trial of the Dragon: Heroes' Rest",
+        activities: {
+            afternoon: [
+                {
+                    id: "1010_1",
+                    text: "Virga Island – Use Edeni's power to clear weather on Spire of Blind Faith",
+                    type: "utility",
+                    tags: ["utility", "weather"]
+                },
+                {
+                    id: "1010_2",
+                    text: "Gauntlet Runner – Chart course to Spire of Blind Faith",
+                    type: "travel",
+                    tags: ["travel"]
+                },
+                {
+                    id: "1010_3",
+                    text: "Gauntlet Runner – Free time",
+                    type: "free",
+                    tags: ["free"]
+                },
+                {
+                    id: "1010_4",
+                    text: "Spire of Blind Faith – Defeat dragon boss to complete 'Trial of the Dragon: Heroes' Rest'",
+                    type: "dungeon",
+                    tags: ["dungeon", "boss", "quest"]
+                }
+            ],
+            night: [
+                {
+                    id: "1010_5",
+                    text: "Skipped due to entering a dungeon",
+                    type: "story",
+                    tags: ["story"]
+                }
+            ]
+        }
+    },
+    "10/11": {
+        title: "10/11 - Trial of the Dragon: Bygone Legacy",
+        activities: {
+            afternoon: [
+                {
+                    id: "1011_1",
+                    text: "Gauntlet Runner – Chart course to Tower of Insolence",
+                    type: "travel",
+                    tags: ["travel"]
+                },
+                {
+                    id: "1011_2",
+                    text: "Gauntlet Runner – Free time",
+                    type: "free",
+                    tags: ["free"]
+                },
+                {
+                    id: "1011_3",
+                    text: "Tower of Insolence – Defeat dragon boss to complete 'Trial of the Dragon: Bygone Legacy' and accept 'Trial of the Dragon: Essence of Power'",
+                    type: "dungeon",
+                    tags: ["dungeon", "boss", "quest"]
+                }
+            ],
+            night: [
+                {
+                    id: "1011_4",
+                    text: "Skipped due to entering a dungeon",
+                    type: "story",
+                    tags: ["story"]
+                }
+            ]
+        }
+    },
+    "10/12": {
+        title: "10/12 - Trial of the Dragon: Essence of Power",
+        activities: {
+            afternoon: [
+                {
+                    id: "1012_1",
+                    text: "Gauntlet Runner – Chart course to Dragon Temple",
+                    type: "travel",
+                    tags: ["travel"]
+                },
+                {
+                    id: "1012_2",
+                    text: "Gauntlet Runner – Free time",
+                    type: "free",
+                    tags: ["free"]
+                },
+                {
+                    id: "1012_3",
+                    text: "Dragon Temple – Defeat dragon boss to complete 'Trial of the Dragon: Essence of Power' (unlock 'Entrusted' trophy). WARNING: Don't bring equipment that repels attacks!",
+                    type: "dungeon",
+                    tags: ["dungeon", "boss", "quest", "trophy"]
+                }
+            ],
+            night: [
+                {
+                    id: "1012_4",
+                    text: "Skipped due to entering a dungeon",
+                    type: "story",
+                    tags: ["story"]
+                }
+            ]
+        }
+    },
+    "10/13": {
+        title: "10/13 - Coliseum Gold Rank",
+        activities: {
+            afternoon: [
+                {
+                    id: "1013_1",
+                    text: "Brilehaven, Coliseum – Ranked Battle (Gold 3) (+4 Courage)",
+                    type: "coliseum",
+                    tags: ["coliseum", "courage"]
+                }
+            ],
+            night: [
+                {
+                    id: "1013_2",
+                    text: "Brilehaven, Coliseum – Ranked Battle (Gold 2) (+4 Courage)",
+                    type: "coliseum",
+                    tags: ["coliseum", "courage"]
+                }
+            ]
+        }
+    },
+    "10/14": {
+        title: "10/14 - Gold 1 Rank",
+        activities: {
+            afternoon: [
+                {
+                    id: "1014_1",
+                    text: "Free time or catch up on missed content",
+                    type: "free",
+                    tags: ["free"]
+                }
+            ],
+            night: [
+                {
+                    id: "1014_2",
+                    text: "Brilehaven, Coliseum – Ranked Battle (Gold 1) (+4 Courage)",
+                    type: "coliseum",
+                    tags: ["coliseum", "courage"]
+                }
+            ]
+        }
+    },
+    "10/15": {
+        title: "10/15 - Champion Battles",
+        activities: {
+            afternoon: [
+                {
+                    id: "1015_1",
+                    text: "Brilehaven, Coliseum – Ranked Battle and accept 'Become Champion of the Coliseum' quest (+4 Courage)",
+                    type: "coliseum",
+                    tags: ["coliseum", "courage", "quest"]
+                }
+            ],
+            night: [
+                {
+                    id: "1015_2",
+                    text: "Brilehaven, Coliseum – Champion Battle to complete 'Become Champion of the Coliseum' (+4 Courage)",
+                    type: "coliseum",
+                    tags: ["coliseum", "courage", "quest"]
+                }
+            ]
+        }
+    },
+    "10/16": {
+        title: "10/16 - Coliseum Champion Trophy",
+        activities: {
+            afternoon: [
+                {
+                    id: "1016_1",
+                    text: "Brilehaven, Coliseum – Create backup save, then do Gold Gauntlet Challenge (win 30 battles for 'Coliseum Champion' trophy), reload save after",
+                    type: "coliseum",
+                    tags: ["coliseum", "trophy"]
+                }
+            ],
+            night: [
+                {
+                    id: "1016_2",
+                    text: "Free time or catch up on missed content",
+                    type: "free",
+                    tags: ["free"]
+                }
+            ]
+        }
+    },
+    "10/17": {
+        title: "10/17 - Free Day",
+        activities: {
+            afternoon: [
+                {
+                    id: "1017_1",
+                    text: "Free time or catch up on missed content",
+                    type: "free",
+                    tags: ["free"]
+                }
+            ],
+            night: [
+                {
+                    id: "1017_2",
+                    text: "Free time or catch up on missed content",
+                    type: "free",
+                    tags: ["free"]
+                }
+            ]
+        }
+    },
+    "10/18": {
+        title: "10/18 - Free Day",
+        activities: {
+            afternoon: [
+                {
+                    id: "1018_1",
+                    text: "Free time or catch up on missed content",
+                    type: "free",
+                    tags: ["free"]
+                }
+            ],
+            night: [
+                {
+                    id: "1018_2",
+                    text: "Free time or catch up on missed content",
+                    type: "free",
+                    tags: ["free"]
+                }
+            ]
+        }
+    },
+    "10/19": {
+        title: "10/19 - Free Day",
+        activities: {
+            afternoon: [
+                {
+                    id: "1019_1",
+                    text: "Free time or catch up on missed content",
+                    type: "free",
+                    tags: ["free"]
+                }
+            ],
+            night: [
+                {
+                    id: "1019_2",
+                    text: "Free time or catch up on missed content",
+                    type: "free",
+                    tags: ["free"]
+                }
+            ]
+        }
+    },
+    "10/20": {
+        title: "10/20 - Free Day",
+        activities: {
+            afternoon: [
+                {
+                    id: "1020_1",
+                    text: "Free time or catch up on missed content",
+                    type: "free",
+                    tags: ["free"]
+                }
+            ],
+            night: [
+                {
+                    id: "1020_2",
+                    text: "Free time or catch up on missed content",
+                    type: "free",
+                    tags: ["free"]
+                }
+            ]
+        }
+    },
+    "10/21": {
+        title: "10/21 - Free Day",
+        activities: {
+            afternoon: [
+                {
+                    id: "1021_1",
+                    text: "Free time or catch up on missed content",
+                    type: "free",
+                    tags: ["free"]
+                }
+            ],
+            night: [
+                {
+                    id: "1021_2",
+                    text: "Free time or catch up on missed content",
+                    type: "free",
+                    tags: ["free"]
+                }
+            ]
+        }
+    },
+    "10/22": {
+        title: "10/22 - Free Day",
+        activities: {
+            afternoon: [
+                {
+                    id: "1022_1",
+                    text: "Free time or catch up on missed content",
+                    type: "free",
+                    tags: ["free"]
+                }
+            ],
+            night: [
+                {
+                    id: "1022_2",
+                    text: "Free time or catch up on missed content",
+                    type: "free",
+                    tags: ["free"]
+                }
+            ]
+        }
+    },
+    "10/23": {
+        title: "10/23 - Free Day",
+        activities: {
+            afternoon: [
+                {
+                    id: "1023_1",
+                    text: "Free time or catch up on missed content",
+                    type: "free",
+                    tags: ["free"]
+                }
+            ],
+            night: [
+                {
+                    id: "1023_2",
+                    text: "Free time or catch up on missed content",
+                    type: "free",
+                    tags: ["free"]
+                }
+            ]
+        }
+    },
+    "10/24": {
+        title: "10/24 - Free Day",
+        activities: {
+            afternoon: [
+                {
+                    id: "1024_1",
+                    text: "Free time or catch up on missed content",
+                    type: "free",
+                    tags: ["free"]
+                }
+            ],
+            night: [
+                {
+                    id: "1024_2",
+                    text: "Free time or catch up on missed content",
+                    type: "free",
+                    tags: ["free"]
+                }
+            ]
+        }
+    },
+    "10/25": {
+        title: "10/25 - Final Follower Time",
+        activities: {
+            afternoon: [
+                {
+                    id: "1025_1",
+                    text: "Free time or catch up on missed content",
+                    type: "free",
+                    tags: ["free"]
+                }
+            ],
+            night: [
+                {
+                    id: "1025_2",
+                    text: "Spend time with all your followers",
+                    type: "follower",
+                    tags: ["follower"]
                 }
             ]
         }
     },
     "10/26": {
-        title: "10/26 - Final Gold Beetles",
+        title: "10/26 - Final Boss & Star Shatterer",
         activities: {
             afternoon: [
                 {
                     id: "1026_1",
-                    text: "Final dungeon areas – Collect remaining Gold Beetles (42-50/50)",
-                    type: "beetle",
-                    tags: ["beetle", "dungeon", "final"],
-                    beetleNumber: "42-50"
+                    text: "Gauntlet Runner – Chart course to Tyrant's Star",
+                    type: "travel",
+                    tags: ["travel"]
                 },
                 {
                     id: "1026_2",
-                    text: "Complete final boss and earn 'Regal Proof' trophy for 100% completion",
-                    type: "trophy",
-                    tags: ["trophy", "final", "100%"]
+                    text: "Tyrant's Star – Don't destroy any Melancholia Crystals! Defeat final boss at full strength for 'Star Shatterer' trophy. Can lower difficulty to Storyteller if needed.",
+                    type: "dungeon",
+                    tags: ["dungeon", "boss", "trophy"]
+                },
+                {
+                    id: "1026_3",
+                    text: "Tyrant's Star – Near end: Use 3 Trance Crystal cluster spawning Human enemy for EXP/A-EXP ('Archetype Hero' trophy if needed)",
+                    type: "grinding",
+                    tags: ["grinding", "trophy"]
+                },
+                {
+                    id: "1026_4",
+                    text: "After final boss: Unlock 'Star Shatterer' and 'Help Anyone in Need' trophies",
+                    type: "story",
+                    tags: ["story", "trophy"]
+                }
+            ],
+            night: [
+                {
+                    id: "1026_5",
+                    text: "Final boss battle completion",
+                    type: "story",
+                    tags: ["story"]
                 }
             ]
+        }
+    },
+    "12/35": {
+        title: "12/35 - Game Completion",
+        activities: {
+            afternoon: [
+                {
+                    id: "1235_1",
+                    text: "Spend time with all followers and watch final scenes. After credits: Unlock 'Coronation of the King' trophy. SAVE YOUR CLEAR DATA!",
+                    type: "story",
+                    tags: ["story", "follower", "trophy"]
+                }
+            ],
+            night: []
         }
     }
 };
