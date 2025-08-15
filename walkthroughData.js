@@ -2356,7 +2356,7 @@ const walkthroughData = {
                 },
                 {
                     id: "0823_2",
-                    text: "Gauntlet Runner – Make backup save, go fishing with Tail Bait for 1 Lord of the Lake and 2 Queen's Honey Jars",
+                    text: "Gauntlet Runner – go fishing with Tail Bait. Dialogue options: 'Nothing biting. Perhaps if the bait were moving…?' → Choose 'Thrash and Splash' for 1 Lord of the Lake + 2 Queen's Honey Jars. 'Yaaawn… Ah, I'm more tired than I realised. Hmm… How do I shake this?' → Choose 'Give into naptime' for 1 Lord of the Lake + 2 Queen's Honey Jars. 'Maybe it's all this staring at the water's surface, but… I'm starting to feel a bit queasy.' → Choose 'Think like a fish' for 1 Lord of the Lake + 2 Queen's Honey Jars",
                     type: "misc",
                     tags: ["fishing"]
                 },

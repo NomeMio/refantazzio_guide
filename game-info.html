@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Metaphor: ReFantazio - Game Information</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="game-info-styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+    <div class="app">
+        <!-- Header -->
+        <header class="header">
+            <div class="header-content">
+                <h1 class="title">
+                    <i class="fas fa-info-circle"></i>
+                    Metaphor: ReFantazio
+                    <span class="subtitle">Game Information Hub</span>
+                </h1>
+                <div class="header-controls">
+                    <a href="index.html" class="btn btn-secondary">
+                        <i class="fas fa-arrow-left"></i>
+                        Back to Tracker
+                    </a>
+                    <a href="archetypes.html" class="btn btn-secondary">
+                        <i class="fas fa-sitemap"></i>
+                        Archetype Tree
+                    </a>
+                    <button id="themeToggle" class="theme-toggle" title="Toggle dark/light theme">
+                        <i class="fas fa-moon"></i>
+                    </button>
+                </div>
+            </div>
+        </header>
+
+        <!-- Navigation Menu -->
+        <nav class="info-nav">
+            <div class="nav-tabs">
+                <button class="nav-tab active" data-section="fishing">
+                    <i class="fas fa-fish"></i>
+                    Fishing Guide
+                </button>
+                <button class="nav-tab" data-section="cooking">
+                    <i class="fas fa-utensils"></i>
+                    Cooking (Coming Soon)
+                </button>
+                <button class="nav-tab" data-section="combat">
+                    <i class="fas fa-sword"></i>
+                    Combat Tips (Coming Soon)
+                </button>
+                <button class="nav-tab" data-section="followers">
+                    <i class="fas fa-users"></i>
+                    Followers (Coming Soon)
+                </button>
+            </div>
+        </nav>
+
+        <!-- Main Content -->
+        <main class="main-content">
+            <!-- Fishing Section -->
+            <section id="fishing" class="info-section active">
+                <div class="section-header">
+                    <h2>
+                        <i class="fas fa-fish"></i>
+                        Fishing Guide
+                    </h2>
+                    <p class="section-description">
+                        Master the art of fishing in Metaphor: ReFantazio. Learn about different baits, 
+                        where to get them, and optimal strategies for catching the best ingredients.
+                    </p>
+                </div>
+
+                <!-- Fishing Mechanics -->
+                <div class="info-card">
+                    <h3><i class="fas fa-cog"></i> How Fishing Works</h3>
+                    <div class="mechanics-grid">
+                        <div class="mechanic-item">
+                            <div class="mechanic-icon">📅</div>
+                            <div class="mechanic-text">
+                                <strong>Unlock:</strong> Available from 8/14 during main story
+                            </div>
+                        </div>
+                        <div class="mechanic-item">
+                            <div class="mechanic-icon">🚢</div>
+                            <div class="mechanic-text">
+                                <strong>Location:</strong> Use Fishing Rod on ship's deck
+                            </div>
+                        </div>
+                        <div class="mechanic-item">
+                            <div class="mechanic-icon">🌙</div>
+                            <div class="mechanic-text">
+                                <strong>Time:</strong> Fishing takes time - becomes nighttime when finished
+                            </div>
+                        </div>
+                        <div class="mechanic-item">
+                            <div class="mechanic-icon">💭</div>
+                            <div class="mechanic-text">
+                                <strong>Process:</strong> Choose bait → Select dialogue option → Get rewards
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Bait Types -->
+                <div class="info-card">
+                    <h3><i class="fas fa-bug"></i> Bait Types & Where to Get Them</h3>
+                    <div id="baitList" class="bait-grid">
+                        <!-- Bait cards will be populated by JavaScript -->
+                    </div>
+                </div>
+
+                <!-- Fishing Dialogues -->
+                <div class="info-card">
+                    <h3><i class="fas fa-comments"></i> Fishing Dialogues & Optimal Answers</h3>
+                    <div id="dialogueList" class="dialogue-section">
+                        <!-- Dialogue cards will be populated by JavaScript -->
+                    </div>
+                </div>
+
+                <!-- Ingredients Reference -->
+                <div class="info-card">
+                    <h3><i class="fas fa-flask"></i> Fishing Ingredients</h3>
+                    <div id="ingredientList" class="ingredient-grid">
+                        <!-- Ingredient cards will be populated by JavaScript -->
+                    </div>
+                </div>
+
+                <!-- Pro Tips -->
+                <div class="info-card tips-card">
+                    <h3><i class="fas fa-lightbulb"></i> Pro Fishing Tips</h3>
+                    <ul id="tipsList" class="tips-list">
+                        <!-- Tips will be populated by JavaScript -->
+                    </ul>
+                </div>
+            </section>
+
+            <!-- Placeholder sections for future content -->
+            <section id="cooking" class="info-section">
+                <div class="section-header">
+                    <h2>
+                        <i class="fas fa-utensils"></i>
+                        Cooking Guide
+                    </h2>
+                    <p class="section-description">Coming Soon - Comprehensive cooking guide with recipes and ingredients.</p>
+                </div>
+                <div class="coming-soon">
+                    <i class="fas fa-hammer"></i>
+                    <h3>Under Construction</h3>
+                    <p>This section is being developed and will include detailed cooking information.</p>
+                </div>
+            </section>
+
+            <section id="combat" class="info-section">
+                <div class="section-header">
+                    <h2>
+                        <i class="fas fa-sword"></i>
+                        Combat Tips
+                    </h2>
+                    <p class="section-description">Coming Soon - Combat strategies and archetype synergies.</p>
+                </div>
+                <div class="coming-soon">
+                    <i class="fas fa-hammer"></i>
+                    <h3>Under Construction</h3>
+                    <p>This section is being developed and will include combat strategies.</p>
+                </div>
+            </section>
+
+            <section id="followers" class="info-section">
+                <div class="section-header">
+                    <h2>
+                        <i class="fas fa-users"></i>
+                        Followers Guide
+                    </h2>
+                    <p class="section-description">Coming Soon - Follower relationships and bond progression.</p>
+                </div>
+                <div class="coming-soon">
+                    <i class="fas fa-hammer"></i>
+                    <h3>Under Construction</h3>
+                    <p>This section is being developed and will include follower information.</p>
+                </div>
+            </section>
+        </main>
+    </div>
+
+    <script src="fishingData.js"></script>
+    <script src="game-info-script.js"></script>
+</body>
+</html>
