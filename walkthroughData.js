@@ -2326,6 +2326,12 @@ const walkthroughData = {
                     text: "Orbwise Path – Complete dungeon, defeat boss, complete 'Save the Mourning Snakes', unlock Junah (+4 Imagination) (Rank 1)",
                     type: "dungeon",
                     tags: ["dungeon", "follower"]
+                },
+                {
+                    id: "0822_8",
+                    text: "Afterwards set up camp instead and choose to go somewhere else.",
+                    type: "travel",
+                    tags: ["travel"]
                 }
             ],
             night: [
