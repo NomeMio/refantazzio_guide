@@ -3271,7 +3271,7 @@ const walkthroughData = {
             afternoon: [
                 {
                     id: "0924_1",
-                    text: "Plaza of Light – After cutscene at fountain, collect Gold Beetle by burned houses (HIGHLY MISSABLE!) (43/50)",
+                    text: "Plaza of Light – After cutscene at fountain, collect Gold Beetle by burned houses (HIGHLY MISSABLE!)(you can still get the achievement in this playthrough ) (43/50)",
                     type: "beetle",
                     tags: ["beetle", "missable"],
                     beetleNumber: 43
